@@ -1,0 +1,84 @@
+<div class="container-fluid topbar">
+  <div class="row bckgrnd">
+    <div class="col-lg-11 col-md-11">
+      <div class="top-info-left">
+        <span class="fa fa-phone"></span>Helpline:- +91-8491940604
+      </div>
+      <div class="top-info-right">
+        <marquee>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</marquee>
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light mynavbar">
+  <!--start menu bar for mobile-->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <ul class="nav navbar-nav mob-nav">
+      <li>
+        <a href="#" class="home-icon"><i class="fa fa-home"></i>
+        </a>
+      </li>
+      <li class="dropdown" *ngFor="let menu of menus">
+        <a href="#"  data-toggle="dropdown" role="button"
+          aria-expanded="true">
+          <span class="nav-label" routerLink={{menu.path}}>{{menu.MenuName}}</span> <i [ngClass]="getClass(menu.MenuName)"  style="padding-left: 5px;"></i>
+        </a>
+          <ng-container *ngIf="menu.MenuName=='Product'">
+            <ul class="dropdown-menu">
+              <li *ngFor="let sub of menu.Pages">
+                <a href="#">{{sub.PageName}}</a>
+                <ul class="sub-items">
+                  <li *ngFor="let submenu of sub.Pages">
+                    <a href="#" class="nav-link">
+                      {{submenu.SubPageName}}
+                    </a>
+                  </li>
+                 </ul>
+              </li>
+            </ul>
+          </ng-container>
+      </li>
+    </ul>
+  </div>
+  <!--<a class="navbar-brand" href="#">Navbar</a>-->
+  <span class="opennav" style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776;</span>
+  <!--logo for mobile-->
+  <a class="nav-link mob-logo" href="#"><img src="assets\images\reckon.jpg" alt="logo"></a>
+  <!--end menu bar for mobile-->
+</nav>
+<!--menu for desktop-->
+<nav class="navbar navbar-expand navbar-light second-nav" id="second-nav" [ngClass]="{'mat-elevation-z5' : true, 'sticky' : isSticky}">
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <div class="dsktp_logo col-lg-2 col-md-2">
+      <img src="assets\images\reckon.jpg" alt="logo">
+    </div>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 menu-ul  col-lg-10 col-md-10" id="nav">
+      <li class="nav-item active home">
+        <a href="#" class="home-icon"><i class="fa fa-home"></i>
+        </a>
+      </li>
+      <li class="nav-item" *ngFor="let menu of menus">
+        <a  class="nav-link menu-size" routerLink={{menu.path}}>{{menu.MenuName}}<i [ngClass]="getClass(menu.MenuName)"  style="padding-left: 5px;"></i>
+        </a>
+        <ng-container *ngIf="menu.MenuName=='Product'">
+          <ul class="bg-light">
+            <li *ngFor="let sub of menu.Pages">
+              <a href="#" class="nav-link sub-size">
+              {{sub.PageName}}
+              </a>
+              <ul class="sub-items">
+                <li *ngFor="let submenu of sub.Pages">
+                  <a href="#" class="nav-link">
+                    {{submenu.SubPageName}}
+                  </a>
+                </li>
+               </ul>
+            </li>
+          </ul>
+        </ng-container>
+      </li>
+    </ul>
+  </div>
+</nav>
