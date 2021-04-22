@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
 
     const Menus = [
       {
-        "MenuID": 1, "MenuName": "About Us", "path": "",    
+        "MenuID": 1, "MenuName": "About Us", "path": "about-us",    
       },
       {
         "MenuID": 2, "MenuName": "Product", "path": "",
@@ -66,7 +66,7 @@ export class HeaderComponent implements OnInit {
       { "MenuID": 4, "MenuName": "Alliance", "path": "", },
       { "MenuID": 5, "MenuName": "Partners", "path": "", },
       { "MenuID": 6, "MenuName": "Support", "path": "", },
-      { "MenuID": 7, "MenuName": "Contact Us", "path": "", },
+      { "MenuID": 7, "MenuName": "Contact Us", "path": "contact-us", },
       { "MenuID": 8, "MenuName": "Tutorial", "path": "", },
     ]  
     return Menus;
