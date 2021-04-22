@@ -77,7 +77,7 @@ export class HeaderComponent implements OnInit {
       return "fa fa-angle-down";
     }
   }
-
+  /*MOBILE MENU*/
   openNav() {
 
     document.getElementById("mySidenav").style.width = "250px";
@@ -86,9 +86,10 @@ export class HeaderComponent implements OnInit {
 
     document.getElementById("mySidenav").style.width = "0";
   }
-  
+
   /*STICKY MENU*/
   isSticky: boolean = false;
+
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
     this.isSticky = window.pageYOffset >= 250;

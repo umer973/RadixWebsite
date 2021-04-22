@@ -36,6 +36,7 @@ html {
   .topbar .top-info-left,
   .topbar .top-info-right{
     color:white;
+    font-size: 14px;
   }
   .topbar .top-info-left span{
      width: 5%;
@@ -43,7 +44,7 @@ html {
   }
   /*---NAVBAR---*/
   .sticky {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     width: 100%;
     z-index: 999;
@@ -530,7 +531,7 @@ html {
       max-width: 60%;
    }
   }
-  @media(max-width: 1024px){
+  @media(max-width: 1024px)and (min-width:767px){
     .second-nav .dsktp_logo img{
       max-width: 65%;
     }
@@ -666,7 +667,7 @@ html {
       width: initial;
     }
     .mynavbar{
-      flex-wrap: initial;
+      flex-wrap: initial !important;
     }
     .mynavbar .mob-logo{
       text-align: center;
@@ -729,7 +730,7 @@ html {
      right: 0;
      text-align: center;
      font-size: 14px;
-     max-width: 70%;
+     max-width: 90%;
      margin: auto;
    }
    .banner .text2{
@@ -739,13 +740,10 @@ html {
      font-size:4vw;
      text-align: center;
    }
-   .banner .Rectangle_2{
-     top:50%;
-     left:33%;
-   }
    .banner .Explore_collection{
      margin:auto;
      line-height: 2.5;
+     font-size: 13px;
    }
     .below-slider .wrapper h5{
       font-size: 16px;
@@ -791,6 +789,12 @@ html {
       border-bottom: 1px solid darkgray;
     }
   }
+  @media(max-width:767px) and (min-width:576px){
+    .banner .Rectangle_2{
+     top:50%;
+     left: 38%;
+   }
+  }
   @media(min-width:576px){
     .mynavbar .mob-logo img{
       max-width: 15%;
@@ -809,6 +813,13 @@ html {
     .mynavbar .mob-logo img{
       max-width: 19%;
     }
+    .banner .Rectangle_2{
+      bottom:0%;
+      left: 38%;
+    }
+    .banner .Explore_collection{
+      font-size: 2vw;
+    }
     .below-slider .wrapper h5{
       display: none;
     }
@@ -825,7 +836,7 @@ html {
       margin-bottom: 25px;
     }
   }
-  @media(max-width:558px){
+  /*@media(max-width:558px){
     .banner .text2{
       position: absolute;
       top:35%;
@@ -834,7 +845,7 @@ html {
     .banner .Explore_collection{
       font-size: 2vw;
     }
-  }
+  }*/
   @media(max-width: 396px){
     .banner .Rectangle_2{
        height: auto;
@@ -843,6 +854,11 @@ html {
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 14px;}
+  }
+  @media (max-width:450px){
+    .banner .text_on_banner{
+      font-size: 13px;
+    }
   }
   #map {
     height: 500px;
