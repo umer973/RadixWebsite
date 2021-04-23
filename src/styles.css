@@ -22,7 +22,7 @@ html {
     font-family: 'Changa', sans-serif;
   }
   .padding-0 {
-      padding: 0px;
+    padding: 0px !important;
   }
   .topbar .bckgrnd{
      background-color: black;
