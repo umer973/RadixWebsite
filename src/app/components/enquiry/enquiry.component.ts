@@ -13,6 +13,7 @@ export class EnquiryComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.createFormControls();
   }
   createFormControls() {
 

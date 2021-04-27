@@ -45,14 +45,14 @@
   <!--<a class="navbar-brand" href="#">Navbar</a>-->
   <span class="opennav" style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776;</span>
   <!--logo for mobile-->
-  <a class="nav-link mob-logo" href="#"><img src="https://dummyimage.com/280x200/000/fff" alt="logo"></a>
+  <a class="nav-link mob-logo" href="#"><img src="assets/images/logo.jpg" alt="logo"></a>
   <!--end menu bar for mobile-->
 </nav>
 <!--menu for desktop-->
 <nav class="navbar navbar-expand navbar-light second-nav" id="second-nav" [ngClass]="{'mat-elevation-z5' : true, 'sticky' : isSticky}">
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
     <div class="dsktp_logo col-lg-2 col-md-2">
-      <img src="https://dummyimage.com/60x60/000/fff" alt="logo">
+      <img src="assets/images/logo.jpg" alt="logo">
     </div>
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0 menu-ul  col-lg-10 col-md-10" id="nav">
       <li class="nav-item active home">
@@ -61,14 +61,14 @@
       </li>
       <li class="nav-item" *ngFor="let menu of menus">
         <a  class="nav-link menu-size" routerLink={{menu.path}}>{{menu.MenuName}}<i [ngClass]="getClass(menu.MenuName)"  style="padding-left: 5px;"></i>
-        </a>
+        </a> <span style="margin:auto">|</span>
         <ng-container *ngIf="menu.MenuName=='Product'">
           <ul class="bg-light">
             <li *ngFor="let sub of menu.Pages">
               <a href="#" class="nav-link sub-size">
               {{sub.PageName}}
               </a>
-              <ul class="sub-items">
+              <ul class="sub-itemxs">
                 <li *ngFor="let submenu of sub.Pages">
                   <a href="#" class="nav-link">
                     {{submenu.SubPageName}}

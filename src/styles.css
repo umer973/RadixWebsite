@@ -25,7 +25,7 @@ html {
     padding: 0px !important;
   }
   .topbar .bckgrnd{
-     background-color: black;
+     background-color: #308230;
      height: auto;
      padding: 5px;
   }
@@ -75,7 +75,7 @@ html {
       text-align: center;
     }
     #nav li {
-      display: inline-block;
+      display: flex;
       position: relative;
     }
     #nav li .nav-link,
@@ -131,6 +131,9 @@ html {
       text-align: left;
       padding: 0px;
     }
+    .nav-item  span:nth-of-type(last){
+       display: none;
+    }
     .second-nav .nav-link i{
       color:black;
       margin-right: 2px;
@@ -166,7 +169,7 @@ html {
     position:absolute;
   }
   .banner .Rectangle_2 {
-    border-radius:3px;
+    border-radius:23px;
     background-color: rgb(255, 90, 0);
     position: absolute;
     width: 25%;
@@ -227,6 +230,12 @@ html {
   }
   .first-section .box-wrapper p{
     margin-top: 10px;
+  }
+  .first-section .box-wrapper  img{
+    width: 40%;
+  }
+  .first-section .box-wrapper p{
+    font-size: 15px;
   }
   /*SECOND-SECTION*/
   .second-section{
@@ -350,7 +359,7 @@ html {
   }
   /*FOOTER*/
   .ftr-bottom .cpyryt{
-    background-color: black;
+    background-color: #308230;
     border-top: 1px solid lightgrey;
     padding: 15px 0;
   }
@@ -364,7 +373,7 @@ html {
     margin-left: auto;
   }
   .ftr-bottom{
-    background-color: #303030;
+    background-color: #308230;
     letter-spacing: 1px;
   }
   .ftr-bottom .text-section2{
@@ -604,7 +613,6 @@ html {
     .below-slider .wrapper h5,
     .ftr-bottom .text-section2 .heading,
     #testimonial_slider .box-wrapper p,
-    .first-section .box-wrapper p,
     .topbar .bckgrnd{
       font-size: 18px;
     }
