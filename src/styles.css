@@ -75,7 +75,7 @@ html {
       text-align: center;
     }
     #nav li {
-      display: flex;
+      display: inline-block;
       position: relative;
     }
     #nav li .nav-link,
@@ -122,17 +122,14 @@ html {
     }
     #nav .sub-items > li > a{
       padding: 0px;
-      text-align: left;
+      text-align: center;
       font-size: 14px;
     }
     #nav li .sub-size{
       font-weight: bold;
       min-height: 12%;
-      text-align: left;
+      text-align: center;
       padding: 0px;
-    }
-    .nav-item  span:nth-of-type(last){
-       display: none;
     }
     .second-nav .nav-link i{
       color:black;
@@ -152,7 +149,6 @@ html {
   }
   .banner .text_on_banner {
     font-size: 14px;
-    color: white;
     text-transform: uppercase;
     line-height: 1.615;
     text-align: left;
@@ -243,6 +239,11 @@ html {
   }
   .second-section h2{
     color: white;
+    margin-bottom: 0px;
+  }
+  .second-section hr{
+    border-top: 4px solid #ec3237;
+    width: 10%;
   }
   .second-section .box-wrapper h3{
     margin-top: 15px;
@@ -261,6 +262,10 @@ html {
   /*THIRD SECTION*/
   .third-section{
     background-color: #fcfcfc;
+  }
+  .third-section .row > div >p{
+    font-size: 18px;
+    text-transform: uppercase;
   }
   .third-section .box-wrapper{
     box-shadow: 9px 11px 14px 0 rgb(0 0 0 / 10%);
@@ -296,6 +301,14 @@ html {
   .third-section #testimonial_slider i{
     color:#fec42d;
   }
+  .third-section h2{
+    margin-bottom: 0px;
+  }
+  .third-section hr{
+    border-top: 4px solid #ec3237;
+    width: 5%;
+    margin-bottom: 35px;
+  } 
   #testimonial_slider .carousel-indicators li{
     background-color: black;
   }
@@ -350,6 +363,14 @@ html {
   }
   /*FIFTH SECTION*/
   .fifth-section{
+    margin-bottom: 35px;
+  }
+  .fifth-section h2{
+    margin-bottom: 0px;
+  }
+  .fifth-section hr{
+    border-top: 4px solid #ec3237;
+    width: 5%;
     margin-bottom: 35px;
   }
   .fifth-section .trending_row > div{ 
@@ -532,22 +553,22 @@ html {
       width:110px;
     }
     #nav li .sub-size{
-      width:236px;
+      width:180px;
     }
   }
   @media(min-width: 1025px){
     .second-nav .dsktp_logo img{
-      max-width: 60%;
+      max-width: 50%;
    }
   }
   @media(max-width: 1024px)and (min-width:767px){
     .second-nav .dsktp_logo img{
-      max-width: 65%;
+      max-width: 60%;
     }
   }
   @media(min-width:992px )and (max-width:1098px){
     #nav li .sub-size{
-      width: 190px;
+      width: 180px;
     }
   }
   @media(min-width:992px){
@@ -589,7 +610,7 @@ html {
       width: 65%;
     }
     #nav .bg-light > li{
-      padding-right: 10px;
+      width: 150px;
     }
     #nav .sub-items > li > a{
       width: 160px;
