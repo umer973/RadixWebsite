@@ -180,6 +180,11 @@ html {
     text-align: center;
     margin-bottom: 0px;
   }
+  .banner > .banner_image{
+    position: absolute;
+     top: 14%;
+     right:5%;
+  }
   /*BELOW SECTION*/
   .below-slider{
     background-color: rgba(48, 48, 48, 0.6);
@@ -322,7 +327,7 @@ html {
     text-align: center;
   }
   .fourth-section .row h2{
-    color:lightgrey;
+    color:#303030;
   }
   .fourth-section .row button,
   .second-section .row button,
@@ -343,6 +348,14 @@ html {
   }
   .help-section{
     background-color: #fcfcfc;
+  }
+  .help-section h2{
+    margin-bottom: 0px;
+  }
+  .help-section hr{
+    border-top: 4px solid #ec3237;
+    width: 5%;
+    margin-bottom: 35px;
   }
   .help-section > .row > div{
     margin: auto;
@@ -377,6 +390,9 @@ html {
     display: flex; 
     justify-content: center;
     margin-bottom: 10px;
+  }
+  .fifth-section .trending_row > div:nth-of-type(1){
+   display: initial;
   }
   /*FOOTER*/
   .ftr-bottom .cpyryt{
@@ -525,7 +541,7 @@ html {
   }
   @media(max-width: 1440px) and (min-width:768px){
     .banner  .text_on_banner{
-      top: 25%;
+      top: 14%;
       font-size: 2vw;
       max-width: 41%;
     }
@@ -534,7 +550,7 @@ html {
       left:8%;
     }
     .banner .Rectangle_2{
-      top:65%;
+      top:56%;
     }
   }
   @media(min-width:1200px){
@@ -630,6 +646,9 @@ html {
       display: flex !important;
       -ms-flex-preferred-size: auto;
       flex-basis: auto;
+    }
+    .banner > .banner_image{
+      width: 45%;
     }
     .below-slider .wrapper h5,
     .ftr-bottom .text-section2 .heading,
