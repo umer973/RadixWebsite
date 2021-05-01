@@ -25,7 +25,7 @@
           aria-expanded="true">
           <span class="nav-label" routerLink={{menu.path}}>{{menu.MenuName}}</span> <i [ngClass]="getClass(menu.MenuName)"  style="padding-left: 5px;"></i>
         </a>
-          <ng-container *ngIf="menu.MenuName=='Product'">
+          <!--<ng-container *ngIf="menu.MenuName=='Product'">
             <ul class="dropdown-menu">
               <li *ngFor="let sub of menu.Pages">
                 <a href="#">{{sub.PageName}}</a>
@@ -38,7 +38,7 @@
                  </ul>
               </li>
             </ul>
-          </ng-container>
+          </ng-container>-->
       </li>
     </ul>
   </div>
@@ -62,7 +62,7 @@
       <li class="nav-item" *ngFor="let menu of menus">
         <a  class="nav-link menu-size" routerLink={{menu.path}}>{{menu.MenuName}}<i [ngClass]="getClass(menu.MenuName)"  style="padding-left: 5px;"></i>
         </a>
-        <ng-container *ngIf="menu.MenuName=='Product'">
+        <!--<ng-container *ngIf="menu.MenuName=='Product'">
           <ul class="bg-light">
             <li *ngFor="let sub of menu.Pages">
               <a href="#" class="nav-link sub-size">
@@ -77,7 +77,7 @@
                </ul>
             </li>
           </ul>
-        </ng-container>
+        </ng-container>-->
       </li>
     </ul>
   </div>

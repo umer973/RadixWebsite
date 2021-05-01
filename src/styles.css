@@ -247,7 +247,7 @@ html {
     margin-bottom: 0px;
   }
   .second-section hr{
-    border-top: 4px solid #ec3237;
+    border-top: 4px solid #303030;
     width: 10%;
   }
   .second-section .box-wrapper h3{
@@ -263,6 +263,7 @@ html {
   }
   .second-section .row button{
     margin: auto;
+    background-color: #303030;
   }
   /*THIRD SECTION*/
   .third-section{
@@ -310,7 +311,7 @@ html {
     margin-bottom: 0px;
   }
   .third-section hr{
-    border-top: 4px solid #ec3237;
+    border-top: 4px solid #303030;
     width: 5%;
     margin-bottom: 35px;
   } 
@@ -330,6 +331,10 @@ html {
     color:#303030;
   }
   .fourth-section .row button,
+  .help-section button{
+    background-color:#308230;
+  }
+  .fourth-section .row button,
   .second-section .row button,
   .help-section button
   {
@@ -337,7 +342,6 @@ html {
     border-radius: 23px;
     margin-top: 25px;
     border: none;
-    background-color:#303030;
     color:white;
     box-shadow: 0 10px 30px -8px rgb(0 0 0 / 16%);
     font-weight: bold;
@@ -353,7 +357,7 @@ html {
     margin-bottom: 0px;
   }
   .help-section hr{
-    border-top: 4px solid #ec3237;
+    border-top: 4px solid #303030;
     width: 5%;
     margin-bottom: 35px;
   }
@@ -370,7 +374,7 @@ html {
   .help-section button:visited,
   .help-section button:focus{
       border: none;
-      background-color: #303030;
+      background-color: #308230;
       color: white;
       box-shadow: 0 10px 30px -8px rgb(0 0 0 / 16%);
   }
@@ -382,7 +386,7 @@ html {
     margin-bottom: 0px;
   }
   .fifth-section hr{
-    border-top: 4px solid #ec3237;
+    border-top: 4px solid #303030;
     width: 5%;
     margin-bottom: 35px;
   }
@@ -693,7 +697,7 @@ html {
     }
     .ftr-bottom .text-section2
     {
-      padding: 50px 0;
+      padding: 40px 0 15px;
     }
     .ftr-bottom .social-icons img{
       width:10%;
@@ -827,7 +831,7 @@ html {
       font-size: 24px;
     }
     .ftr-bottom .text-section2 {
-      padding: 20px 0 10px;
+      padding: 20px 0px 0px;
     }
     .ftr-bottom .text-section2 .heading{
       margin-bottom: 10px;
