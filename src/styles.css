@@ -528,6 +528,37 @@ html {
     width: auto;
     z-index: 100;
   }
+  /*partner*/
+  .partner{
+    padding: 20px 0px;
+  }
+  .partner .card{
+    border:1px solid #007bff;
+    margin-bottom: 10px;
+  }
+  .partner .card .first{
+    text-transform:uppercase;
+    font-size: 18px;
+  }
+  .partner .card .first i,
+  .partner .card .second .left-div i{
+    margin-right: 5px;
+  }
+  .partner .card .second
+  {
+    color: #007bff;
+    font-size: 18px;
+  }
+  .partner .card .second .right-div i{
+    margin-left: 6px;
+  }
+  .partner .card .third{
+    color:lightgrey;
+    font-size: 14px;
+  }
+  .partner .card .right-div{
+    text-align: right;
+  }
   /*MEDIA QUERIES*/
   /***MEDIA QUERIES***/
   @media (max-width: 2560px) and (min-width:1441px){

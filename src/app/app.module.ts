@@ -13,6 +13,7 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { ClientsComponent } from './components/clients/clients.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { LayoutModule } from './components/layout/layout.module';
+import { PartnerComponent } from './components/partner/partner.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { LayoutModule } from './components/layout/layout.module';
     AboutUsComponent,
     ContactUsComponent,
     ClientsComponent,
-    LayoutComponent
+    LayoutComponent,
+    PartnerComponent
   ],
   imports: [
     BrowserModule,
