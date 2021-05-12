@@ -508,6 +508,10 @@ html {
     transform: rotate(-90deg);
     width: 20%;
   }
+  .contact-us .inner-div{
+    display: flex;
+    justify-content: center;
+  }
   /*slick*/
   .slick-slider {
     margin: auto;
@@ -529,7 +533,7 @@ html {
     z-index: 100;
   }
   /*partner*/
-  .partner{
+  .partner,.customer{
     padding: 20px 0px;
   }
   .partner .card{
@@ -558,6 +562,25 @@ html {
   }
   .partner .card .right-div{
     text-align: right;
+  }
+  /*customer*/
+  .customer .wrapper{
+    text-align: center;
+  }
+  .customer > .row > .wrapper{
+    border: 1px solid #e6e6e6;
+    padding: 5px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #fbfbfb;
+    width: 19%;
+    margin-bottom: 10px;
+  }
+  .customer  .wrapper p{
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: #000;
   }
   /*MEDIA QUERIES*/
   /***MEDIA QUERIES***/
@@ -738,8 +761,12 @@ html {
     .ftr-bottom .cpyryt div{
       display: flex;
     }
-    .about-us > .row > div:nth-of-type(1){
-      border-right: 1px solid darkgray;
+    .contact-us .inner-div{
+      width: 60%;
+      margin: auto;
+    }
+    .contact-us .inner-div p{
+      width: 50%;
     }
   }
   @media (max-width: 767px){
@@ -882,6 +909,16 @@ html {
     .about-us > .row > div:nth-of-type(1){
       border-bottom: 1px solid darkgray;
     }
+    .customer > .row > .wrapper{
+      width: 24%;
+    }
+    .contact-us .inner-div{
+      width: 90%;
+      margin: auto;
+    }
+    .contact-us .inner-div p{
+      width: 50%;
+    }
   }
   @media(min-width:576px){
     .mynavbar .mob-logo img{
@@ -918,6 +955,9 @@ html {
     }
     .ftr-bottom .text-section2 > div{
       margin-bottom: 25px;
+    }
+    .customer > .row > .wrapper{
+      width: 30%;
     }
   }
   /*@media(max-width:558px){

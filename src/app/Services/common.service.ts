@@ -45,7 +45,7 @@ export class CommonService {
           },
         ]
       },
-      { "MenuID": 3, "MenuName": "Customer", "path": "", },
+      { "MenuID": 3, "MenuName": "Customer", "path": "customer", },
       { "MenuID": 5, "MenuName": "Partners", "path": "partner", },
       { "MenuID": 6, "MenuName": "Support", "path": "", },
       { "MenuID": 7, "MenuName": "Contact Us", "path": "contact-us", },
