@@ -27,7 +27,7 @@
           aria-expanded="true">
           <span class="nav-label" routerLink={{menu.path}}>{{menu.MenuName}}</span> <i [ngClass]="getClass(menu.MenuName)"  style="padding-left: 5px;"></i>
         </a>
-          <!--<ng-container *ngIf="menu.MenuName=='Product'">
+        <ng-container *ngIf="menu.MenuName=='Product'">
             <ul class="dropdown-menu">
               <li *ngFor="let sub of menu.Pages">
                 <a href="#">{{sub.PageName}}</a>
@@ -40,7 +40,7 @@
                  </ul>
               </li>
             </ul>
-          </ng-container>-->
+        </ng-container>
       </li>
     </ul>
   </div>
@@ -50,13 +50,112 @@
   <a class="nav-link mob-logo" href="#"><img src="assets/images/logo.jpg" alt="logo"></a>
   <!--end menu bar for mobile-->
 </nav>
+
+<!----new menu----->
+<nav class="navbar navbar-expand-lg navbar-light bg-light newmenu" [ngClass]="{'mat-elevation-z5' : true, 'sticky' : isSticky}">
+  <div class="navbar-header logo">
+            <a class="navbar-brand hdrSrc" href="#">
+                <img src="https://dummyimage.com/180x90/000/fff" alt="logo" >
+            </a>                              
+  </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+        <li class="nav-item dropdown menu-item">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Softwares
+          </a>
+          <div class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                            <h6>Retail Softwares</h6>
+                            <ul class="list-links">
+                                <li><a class="hdrSrc" href="/retail/pharmacy_software.html">Pharmacy Shop Software</a></li>
+                                <li><a class="hdrSrc" href="/retail/supermarket_software.html">Kirana/Grocery Shop Software</a></li>
+                                <li><a class="hdrSrc" href="/retail/pos_software.html">POS Software</a></li>
+                                <li><a class="hdrSrc" href="/retail/jewellery_software.html">Jewellery Software</a></li>
+                                <li><a class="hdrSrc" href="/retail/restaurant_software.html">Restaurant Software</a></li>
+                                <li><a class="hdrSrc" href="/retail/garment_software.html">Garment Software</a></li>
+                                <li><a class="hdrSrc" href="/retail/retail_software.html">Retail Software</a></li>
+                                <li><a class="hdrSrc" href="/retail/salon_software.html">Salon Software</a></li>
+                            </ul>
+              </div>
+              <div class="col-md-3 col-sm-4 col-xs-12">
+                            <h6>Distribution Softwares</h6>
+                            <ul class="list-links">
+                                <li><a class="hdrSrc" href="/distribution/pharma_software.html">Pharma Distribution Software</a></li>
+                                <li><a class="hdrSrc" href="/distribution/fmcg_software_india.html">FMCG Distribution Software</a></li>
+                                <li><a class="hdrSrc" href="/distribution/mandisoftware.html">Mandi(AADHAT) Software</a></li>
+                                <li><a class="hdrSrc" href="/distribution/warehouse_management_software.html">Warehouse Manangement Software</a></li>
+                                <li><a class="hdrSrc" href="/distribution/wholesale_distribution_software.html">Wholesale Distribution Software</a></li>
+                                <li><a class="hdrSrc" href="/distribution/automobiles.html">Automobile Software</a></li>
+                                <li><a class="hdrSrc" href="/distribution/supply_chain_management_software.html">Supply Chain Management</a></li>
+                                <li><a class="hdrSrc" href="https://webxpert.margcompusoft.com/">DMSXpert/Multi-location Software</a></li>
+                            </ul>
+              </div>
+              <div class="col-md-3 col-sm-4 col-xs-12">
+                            <h6>Manufacturing Softwares</h6>
+                            <ul class="list-links">
+                                <li><a class="hdrSrc" href="/manufacturing/erp_software_solution.html">ERP Software Solution</a></li>
+                                <li><a class="hdrSrc" href="/manufacturing/pharmaceutical_manufacturing_software_erp.html">Pharmaceutical Manufacturing Software</a></li>
+                                <li><a class="hdrSrc" href="/manufacturing/ayurvedic_homeopathic_software.html">Ayurvedic &amp; Homeopathic Software</a></li>
+                                <li><a class="hdrSrc" href="/manufacturing/automobile_industry_software.html">Automobile Industry Software</a></li>
+                                <li><a class="hdrSrc" href="/manufacturing/textile_software_erp.html">Textile Software</a></li>
+                                <li><a class="hdrSrc" href="/manufacturing/assembling_industry_software.html">Assembling Industry Software</a></li>
+                                <li><a class="hdrSrc" href="/manufacturing/process_manufacturing_software_erp.html">Process Manufacturing Software</a></li>
+                                <li><a class="hdrSrc" href="/manufacturing/food_beverage_software_erp.html">Food &amp; Beverage Industry Software</a></li>
+                            </ul>
+              </div>  
+              <div class="col-md-3 col-sm-4 col-xs-12">
+                            <h6>Manufacturing Softwares</h6>
+                            <ul class="list-links">
+                                <li><a class="hdrSrc" href="/manufacturing/erp_software_solution.html">ERP Software Solution</a></li>
+                                <li><a class="hdrSrc" href="/manufacturing/pharmaceutical_manufacturing_software_erp.html">Pharmaceutical Manufacturing Software</a></li>
+                                <li><a class="hdrSrc" href="/manufacturing/ayurvedic_homeopathic_software.html">Ayurvedic &amp; Homeopathic Software</a></li>
+                                <li><a class="hdrSrc" href="/manufacturing/automobile_industry_software.html">Automobile Industry Software</a></li>
+                                <li><a class="hdrSrc" href="/manufacturing/textile_software_erp.html">Textile Software</a></li>
+                                <li><a class="hdrSrc" href="/manufacturing/assembling_industry_software.html">Assembling Industry Software</a></li>
+                                <li><a class="hdrSrc" href="/manufacturing/process_manufacturing_software_erp.html">Process Manufacturing Software</a></li>
+                                <li><a class="hdrSrc" href="/manufacturing/food_beverage_software_erp.html">Food &amp; Beverage Industry Software</a></li>
+                            </ul>
+              </div>                 
+            </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle" href="#">Other Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Customers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Partners</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Downloads</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tutorials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Support</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+      </ul>
+  </div>
+</nav>
+
+
+<!-----new menu----->
 <!--menu for desktop-->
-<nav class="navbar navbar-expand navbar-light second-nav" id="second-nav" [ngClass]="{'mat-elevation-z5' : true, 'sticky' : isSticky}">
+<!--<nav class="navbar navbar-expand navbar-light second-nav" id="second-nav" [ngClass]="{'mat-elevation-z5' : true, 'sticky' : isSticky}">
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
     <div class="dsktp_logo col-lg-2 col-md-2">
       <img src="assets/images/logo.jpg" alt="logo">
     </div>
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 menu-ul  col-lg-10 col-md-10" id="nav">
+    <ul class="navbar-nav menu-ul" id="nav">
       <li class="nav-item active home">
         <a href="#" class="home-icon"><i class="fa fa-home"></i>
         </a>
@@ -64,8 +163,8 @@
       <li class="nav-item" *ngFor="let menu of menus">
         <a  class="nav-link menu-size" routerLink={{menu.path}}>{{menu.MenuName}}<i [ngClass]="getClass(menu.MenuName)"  style="padding-left: 5px;"></i>
         </a>
-        <!--<ng-container *ngIf="menu.MenuName=='Product'">
-          <ul class="bg-light">
+        <ng-container *ngIf="menu.MenuName=='Product'">
+          <ul class="dropdown-menu fadeIn clearfix animated bg-light">
             <li *ngFor="let sub of menu.Pages">
               <a href="#" class="nav-link sub-size">
               {{sub.PageName}}
@@ -79,8 +178,8 @@
                </ul>
             </li>
           </ul>
-        </ng-container>-->
+        </ng-container>
       </li>
     </ul>
   </div>
-</nav>
+</nav>-->
