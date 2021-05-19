@@ -6,6 +6,7 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { MainComponent } from './components/main/main.component';
 import { PartnerComponent } from './components/partner/partner.component';
 import { CustomerComponent } from './components/customer/customer.component';
+import { DownloadsComponent } from './components/downloads/downloads.component';
 
 const routes: Routes = [
 
@@ -18,6 +19,7 @@ const routes: Routes = [
               { path: 'about-us', component: AboutUsComponent },
               { path: 'partner', component: PartnerComponent },
               { path: 'customer', component: CustomerComponent },
+              { path: 'downloads', component: DownloadsComponent },
             ]
           },
 ];

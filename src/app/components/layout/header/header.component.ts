@@ -32,9 +32,40 @@ checkScroll() {
 
   /*MENU CONDITION*/
   getClass(menu) {
-    if (menu == "Product") {
-      return "fa fa-angle-down";
+
+    var classname="";
+
+    switch(menu)
+    {
+      case "Softwares":
+        classname="fa fa-angle-down";
+        break;
+        case "Products":
+          classname= "fa fa-angle-down";
+        break;
     }
+    return classname;
+    /*if (menu == "Softwares" ||  "Products"){
+      return "fa fa-angle-down";
+
+    }*/
+
+  }
+  getdropdown(menu){
+
+    var classname="";
+
+    switch(menu)
+    {
+      case "Softwares":
+        classname="menu-item";
+        break;
+        case "Products":
+          classname= "menu-item";
+        break;
+    }
+
+    return classname;
   }
 
 

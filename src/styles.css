@@ -52,14 +52,14 @@ html {
   }
 /*---new menu----*/
 .newmenu{
-	padding-bottom: 0px;
+	padding-bottom: 0px !important;
 }
 .logo .navbar-brand{
 	text-align: center;
 	margin: auto;
 }
 .logo img{
-    max-width: 70%;
+    max-width: 30%;
 }
 #navbarSupportedContent .menu-item{
 	position: static;
@@ -90,7 +90,7 @@ html {
 	position: absolute;
 }
 .menu-item:hover{
-   background-color: #099;
+   background-color: #308230;
 }
 #navbarSupportedContent .dropdown-menu.show,
 .menu-item:hover > .submenu{
@@ -100,8 +100,8 @@ html {
    padding: 0px;
 }
 #navbarSupportedContent .nav-link{
-	padding-right: .5rem;
-    padding-left: .5rem;
+	padding-right: .4;
+  padding-left: .4rem;
 }
 #navbarSupportedContent .nav-link{
     font-weight: 400;
@@ -134,9 +134,10 @@ html {
     border-bottom: 1px dashed #e4e4e4;
     position: relative;
 }
+
 @media(min-width: 992px){
 	#navbarSupportedContent{
-	  margin-top: 37px;
+	  margin-top: 30px;
 	}
 }
 
@@ -1012,7 +1013,7 @@ html {
   }
   @media(min-width:576px){
     .mynavbar .mob-logo img{
-      max-width: 15%;
+      max-width: 30%;
     }
     .below-slider .wrapper{
       border-right: 1px solid darkgray;

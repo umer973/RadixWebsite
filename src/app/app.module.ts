@@ -15,6 +15,7 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { LayoutModule } from './components/layout/layout.module';
 import { PartnerComponent } from './components/partner/partner.component';
 import { CustomerComponent } from './components/customer/customer.component';
+import { DownloadsComponent } from './components/downloads/downloads.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { CustomerComponent } from './components/customer/customer.component';
     ClientsComponent,
     LayoutComponent,
     PartnerComponent,
-    CustomerComponent
+    CustomerComponent,
+    DownloadsComponent
   ],
   imports: [
     BrowserModule,
