@@ -45,11 +45,11 @@ checkScroll() {
         break;
     }
     return classname;
+
     /*if (menu == "Softwares" ||  "Products"){
       return "fa fa-angle-down";
 
     }*/
-
   }
   getdropdown(menu){
 

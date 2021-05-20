@@ -9,6 +9,13 @@ export class LayoutComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    //this.hideloader();
   }
-
+/** Function is defined
+        hideloader() {
+          document.getElementById("#loading").animate({
+            top: -200
+          }, 1500);        
+      
+        }**/
 }
