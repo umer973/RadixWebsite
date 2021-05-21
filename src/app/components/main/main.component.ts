@@ -9,7 +9,7 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {
   }
   //ScrolltoTop//
-  buttonValue = document.getElementById("scrollToTopBtn ");
+  buttonValue = document.getElementById("scrollToTopBtn");
   onActivate(event) {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       this.buttonValue.style.display = "block";
@@ -22,6 +22,6 @@ export class MainComponent implements OnInit {
 topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
- }
+  }
 
 }
