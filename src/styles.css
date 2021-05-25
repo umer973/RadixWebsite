@@ -77,14 +77,15 @@ html {
     margin: auto;
 }
 .navbar-expand-lg  #navbarSupportedContent{
-	display: flex!important;
-    flex-basis: auto;
+	display: block !important;
+  flex-basis: auto;
 }
 .navbar-expand-lg #navbarSupportedContent .navbar-nav{
 	flex-direction: row;
 }
 #navbarSupportedContent .navbar-nav{
   margin-left: auto;
+  float: right;
 }
 #navbarSupportedContent .navbar-nav .dropdown-menu{
 	position: absolute;
@@ -137,13 +138,22 @@ html {
     border-bottom: 1px dashed #e4e4e4;
     position: relative;
 }
-
-@media(min-width: 992px){
-	#navbarSupportedContent{
-	  margin-top: 30px;
-	}
+#navbarSupportedContent .new-top{
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+  width: 40%;
 }
-
+#navbarSupportedContent .new-top li{
+  margin-left: auto;
+  margin-right: auto;
+}
+#navbarSupportedContent .new-top li a{
+  font-weight: 400;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+}
 /*----new menu----*/
 
   /**.second-nav{
@@ -327,7 +337,7 @@ html {
     margin-top: 10px;
   }
   .first-section .box-wrapper  img{
-    width: 40%;
+    width: 30%;
   }
   .first-section .box-wrapper p{
     font-size: 15px;
@@ -564,7 +574,9 @@ html {
     padding: 10px 0px;
   }
   .about-us > h1,
-  .contact-us > h1
+  .contact-us > h1,
+  .customer h1,
+  .partner h1
   {
     text-align: center;
     text-transform: capitalize;
@@ -628,8 +640,10 @@ html {
   }
   /*partner*/
   .partner,.customer{
-    padding: 20px 0px;
-    margin: 30px 0px 0px;
+    margin: 20px 0px 0px;
+  }
+  .partner h1{
+    margin-bottom: 20px;
   }
   .partner .card{
     border:1px solid #007bff;
@@ -661,6 +675,9 @@ html {
   /*customer*/
   .customer .wrapper{
     text-align: center;
+  }
+  .customer h1{
+    margin-bottom: 20px;
   }
   .customer > .row{
     justify-content: center;
@@ -740,7 +757,8 @@ html {
   .downloads .second-row .first .bottom p a,
   .downloads .second-row .second .bottom p a,
   .downloads .second-row .first .middle .text a,
-  .downloads .second-row .second .middle .text a{
+  .downloads .second-row .second .middle .text a,
+  .downloads .sixth-row ul a{
     color: #337ab7;
   }
   .downloads .second-row .first .middle,
@@ -801,7 +819,8 @@ html {
     width: 100%;
   }
   .downloads .fifth-row > div,
-  .downloads .sixth-row > div
+  .downloads .sixth-row > div,
+  .downloads .seventh-row > div
   {
     display: flex;
     margin: auto;
@@ -838,6 +857,26 @@ html {
   .downloads .sixth-row .left-side,
   .downloads .sixth-row .right-side{
     width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .downloads .seventh-row .box{
+    border-right: 1px solid #ddd;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 16.6%;
+  }
+  .downloads .seventh-row .box p{
+    margin: auto;
+  }
+  .downloads .seventh-row .box .text{
+    font-size: 14px;
+  }
+  .downloads .eight-row{
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -957,6 +996,15 @@ html {
    .ftr-bottom .text-section2 p i{
       font-size: 10px;
    }
+   .downloads .seventh-row > div{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .downloads .seventh-row .box{
+    width: 30%;
+    float: left;
+  }
   }
   @media(max-width: 991px) and (min-width:768px){
     .top-info-left{
@@ -975,6 +1023,9 @@ html {
     .slick-slider .next-slide{
       top: 25%;
       font-size: 24px;
+    }
+    .first-section .box-wrapper img{
+      width: 35%;
     }
   }
   @media (min-width: 768px){
@@ -995,9 +1046,6 @@ html {
     #testimonial_slider .box-wrapper p,
     .topbar .bckgrnd{
       font-size: 18px;
-    }
-    .second-section{
-      margin-top: 20px;
     }
     .second-section .box-wrapper{
       margin: 40px 0px;
@@ -1165,6 +1213,9 @@ html {
     .second-section .box-wrapper{
       margin: 25px 0px;
     }
+    .first-section .box-wrapper img{
+      width: 45%;
+    }
     #testimonial_slider .carousel-control-prev,
     #testimonial_slider .carousel-control-next
     {
@@ -1230,6 +1281,9 @@ html {
       width: 100%;
       margin: 20px 0px;
     }
+    .downloads .seventh-row .box{
+      width: 50%;
+    }
   }
   @media(min-width:576px){
     .mynavbar .mob-logo img{
@@ -1244,6 +1298,7 @@ html {
     .slick-slider{
       width: 100%;
     }
+    
   }
   @media(max-width:575px){
     .mynavbar .mob-logo img{
