@@ -143,6 +143,7 @@ html {
   display: flex;
   margin-left: auto;
   width: 40%;
+  padding-left: 0px;
 }
 #navbarSupportedContent .new-top li{
   margin-left: auto;
@@ -150,7 +151,7 @@ html {
 }
 #navbarSupportedContent .new-top li a{
   font-weight: 400;
-  color: black;
+  color: navy;
   font-size: 14px;
   text-decoration: none;
 }
