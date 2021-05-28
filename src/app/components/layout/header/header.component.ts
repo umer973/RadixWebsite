@@ -20,7 +20,7 @@ isSticky: boolean = false;
 
 @HostListener('window:scroll', ['$event'])
 checkScroll() {
- this.isSticky = window.pageYOffset >= 250;
+ this.isSticky = window.pageYOffset >= 100;
 }
 
   /* LOADING MENUS */

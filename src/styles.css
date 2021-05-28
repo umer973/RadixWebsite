@@ -102,13 +102,13 @@ html {
 }
 #navbarSupportedContent .nav-link{
 	padding-right: .4;
-  padding-left: .4rem;
+  padding-left: .9rem;
 }
 #navbarSupportedContent .nav-link{
   font-weight: 400;
   color: black;
   line-height: 20px;
-  font-size: 14px;
+  font-size: 15px;
 }
 #navbarSupportedContent .nav-link:hover{
   color: white;
@@ -144,6 +144,7 @@ html {
   margin-left: auto;
   width: 40%;
   padding-left: 0px;
+  margin-bottom: 0px;
 }
 #navbarSupportedContent .new-top li{
   margin-left: auto;
@@ -682,6 +683,8 @@ html {
   }
   .customer > .row{
     justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
   .customer > .row > .wrapper{
     border: 1px solid #e6e6e6;
@@ -940,7 +943,7 @@ html {
   .price .outer-box h4 {
     font-size: 17px;
     color: #3a4172;
-    margin: 25px 0 20px;
+    margin: 25px 0 10px;
     text-align: center;
     line-height: 1.5;
   }
@@ -1205,6 +1208,12 @@ html {
     }
     .downloads .fourth-row .heading{
       width: 65%;
+    }
+    .price .outer-box h4{
+      height: 90px;
+    }
+    .price .large-div .inner-box{
+      height: 60%;
     }
   }
   @media (max-width: 767px){

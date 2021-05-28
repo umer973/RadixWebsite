@@ -1,12 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterContentInit, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-layout',
   templateUrl: './layout.component.html'
 })
-export class LayoutComponent implements OnInit {
+export class LayoutComponent implements OnInit,AfterContentInit {
   isLoading: boolean = true;
   constructor() { }
+
+
+  ngAfterContentInit(): void {
+   
+  }
 
   ngOnInit(): void {
     //this.hideloader();
