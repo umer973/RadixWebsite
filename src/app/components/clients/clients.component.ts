@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from 'src/app/services/common.service';
 
 @Component({
   selector: 'app-clients',
@@ -6,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientsComponent implements OnInit {
 
-  constructor() { }
+  clients: any;
+  constructor(private service: CommonService) { }
 
   ngOnInit(): void {
+
+    
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from 'src/app/services/common.service';
 
 @Component({
   selector: 'app-partner',
@@ -6,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PartnerComponent implements OnInit {
 
-  constructor() { }
+  partners:[];
+  constructor(private service: CommonService) { }
 
   ngOnInit(): void {
+
+    this.service.getPartners().subscribe(res => {
+      let result = res;
+      this.partners = result.Result;
+
+    }, err => {
+
+    })
   }
 
 }

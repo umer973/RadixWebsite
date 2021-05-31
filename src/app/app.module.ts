@@ -17,7 +17,7 @@ import { PartnerComponent } from './components/partner/partner.component';
 import { CustomerComponent } from './components/customer/customer.component';
 import { DownloadsComponent } from './components/downloads/downloads.component';
 import { PriceComponent } from './components/price/price.component';
-
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -33,7 +33,8 @@ import { PriceComponent } from './components/price/price.component';
     PartnerComponent,
     CustomerComponent,
     DownloadsComponent,
-    PriceComponent
+    PriceComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -42,6 +43,7 @@ import { PriceComponent } from './components/price/price.component';
     FormsModule,
     ReactiveFormsModule,
     LayoutModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

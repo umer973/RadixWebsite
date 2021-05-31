@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { CommonService } from 'src/app/Services/common.service';
+import { CommonService } from 'src/app/services/common.service';
 
 @Component({
   selector: 'app-header',

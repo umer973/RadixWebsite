@@ -1,149 +1,29 @@
 <div class="container-fluid partner bg-light">
     <h1>Our Partners</h1>
     <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12" *ngFor="let partner of partners">
             <div class="card">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item first"><i class="fa fa-user"></i> Mr. ABC</li>
-                  <li class="list-group-item second">
-                    <div class="left-div">
-                        <p><i class="fa fa-building"></i>Mr. ABC</p>
-                    </div>
-                    <div class="right-div">
-                        <a href="mailto: mamon.lalbagh@gmail.com"> abc.email@gmail.com <i class="fa fa-envelope"></i></a>
-                    </div>
-                    <div class="right-div">
-                        <a href="tel:+91 8951168650">+91 012345678 <i class="fa fa-mobile"></i></a>
-                    </div>
-                  </li>
-                  <li class="list-group-item third"><i class="fa fa-map-marker fa-lg"></i><span class="w-100 pl-2">Place: Bangalore
-                    Srinagar
-                    Kashmir
-                    India
-                    190001
-                    </span></li>
+                    <li class="list-group-item first"><i class="fa fa-user"></i>{{partner.PartnerName}}</li>
+                    <li class="list-group-item second">
+                        <div class="left-div">
+                            <p><i class="fa fa-building"></i>{{partner.PartnerName}}</p>
+                        </div>
+                        <div class="right-div">
+                            <a href="mailto: mamon.lalbagh@gmail.com"> {{partner.Email}} <i
+                                    class="fa fa-envelope"></i></a>
+                        </div>
+                        <div class="right-div">
+                            <a href="tel:+91 8951168650">+{{partner.ContactNo}} <i class="fa fa-mobile"></i></a>
+                        </div>
+                    </li>
+                    <li class="list-group-item third"><i class="fa fa-map-marker fa-lg"></i><span class="w-100 pl-2">
+                            Place: {{partner.Address}}
+
+                        </span></li>
                 </ul>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-            <div class="card">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item first"><i class="fa fa-user"></i> Mr. ABC</li>
-                  <li class="list-group-item second">
-                    <div class="left-div">
-                        <p><i class="fa fa-building"></i>Mr. ABC</p>
-                    </div>
-                    <div class="right-div">
-                        <a href="mailto: mamon.lalbagh@gmail.com"> abc.email@gmail.com <i class="fa fa-envelope"></i></a>
-                    </div>
-                    <div class="right-div">
-                        <a href="tel:+91 8951168650">+91 012345678 <i class="fa fa-mobile"></i></a>
-                    </div>
-                  </li>
-                  <li class="list-group-item third"><i class="fa fa-map-marker fa-lg"></i><span class="w-100 pl-2">Place: Bangalore
-                    Srinagar
-                    Kashmir
-                    India
-                    190001
-                    </span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-            <div class="card">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item first"><i class="fa fa-user"></i> Mr. ABC</li>
-                  <li class="list-group-item second">
-                    <div class="left-div">
-                        <p><i class="fa fa-building"></i>Mr. ABC</p>
-                    </div>
-                    <div class="right-div">
-                        <a href="mailto: mamon.lalbagh@gmail.com"> abc.email@gmail.com <i class="fa fa-envelope"></i></a>
-                    </div>
-                    <div class="right-div">
-                        <a href="tel:+91 8951168650">+91 012345678 <i class="fa fa-mobile"></i></a>
-                    </div>
-                  </li>
-                  <li class="list-group-item third"><i class="fa fa-map-marker fa-lg"></i><span class="w-100 pl-2">Place: Bangalore
-                    Srinagar
-                    Kashmir
-                    India
-                    190001
-                    </span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-            <div class="card">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item first"><i class="fa fa-user"></i> Mr. ABC</li>
-                  <li class="list-group-item second">
-                    <div class="left-div">
-                        <p><i class="fa fa-building"></i>Mr. ABC</p>
-                    </div>
-                    <div class="right-div">
-                        <a href="mailto: mamon.lalbagh@gmail.com"> abc.email@gmail.com <i class="fa fa-envelope"></i></a>
-                    </div>
-                    <div class="right-div">
-                        <a href="tel:+91 8951168650">+91 012345678 <i class="fa fa-mobile"></i></a>
-                    </div>
-                  </li>
-                  <li class="list-group-item third"><i class="fa fa-map-marker fa-lg"></i><span class="w-100 pl-2">Place: Bangalore
-                    Srinagar
-                    Kashmir
-                    India
-                    190001
-                    </span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-            <div class="card">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item first"><i class="fa fa-user"></i> Mr. ABC</li>
-                  <li class="list-group-item second">
-                    <div class="left-div">
-                        <p><i class="fa fa-building"></i>Mr. ABC</p>
-                    </div>
-                    <div class="right-div">
-                        <a href="mailto: mamon.lalbagh@gmail.com"> abc.email@gmail.com <i class="fa fa-envelope"></i></a>
-                    </div>
-                    <div class="right-div">
-                        <a href="tel:+91 8951168650">+91 012345678 <i class="fa fa-mobile"></i></a>
-                    </div>
-                  </li>
-                  <li class="list-group-item third"><i class="fa fa-map-marker fa-lg"></i><span class="w-100 pl-2">Place: Bangalore
-                    Srinagar
-                    Kashmir
-                    India
-                    190001
-                    </span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-            <div class="card">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item first"><i class="fa fa-user"></i> Mr. ABC</li>
-                  <li class="list-group-item second">
-                    <div class="left-div">
-                        <p><i class="fa fa-building"></i>Mr. ABC</p>
-                    </div>
-                    <div class="right-div">
-                        <a href="mailto: mamon.lalbagh@gmail.com"> abc.email@gmail.com <i class="fa fa-envelope"></i></a>
-                    </div>
-                    <div class="right-div">
-                        <a href="tel:+91 8951168650">+91 012345678 <i class="fa fa-mobile"></i></a>
-                    </div>
-                  </li>
-                  <li class="list-group-item third"><i class="fa fa-map-marker fa-lg"></i><span class="w-100 pl-2">Place: Bangalore
-                    Srinagar
-                    Kashmir
-                    India
-                    190001
-                    </span></li>
-                </ul>
-            </div>
-        </div>
+        
     </div>
 </div>
