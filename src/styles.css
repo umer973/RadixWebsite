@@ -248,12 +248,13 @@ html {
   }
   .top-banner img{
     width: 100%;
+    margin-top: 10px;
   }
-  .banner {  
+  /**.banner {  
     position:relative;
     text-align: left;
-  }
-  .banner .text_on_banner {
+  }**/
+  /**.banner .text_on_banner {
     font-size: 14px;
     text-transform: uppercase;
     line-height: 1.615;
@@ -290,7 +291,7 @@ html {
     position: absolute;
      top: 14%;
      right:5%;
-  }
+  }**/
   /*BELOW SECTION*/
   .below-slider{
     background-color: rgba(48, 48, 48, 0.6);
@@ -331,9 +332,6 @@ html {
     padding: 40px 0px;
     text-align: center;
     margin: auto;
-  }
-  .first-section{
-    margin-top: 15px;
   }
   .first-section .box-wrapper p{
     margin-top: 10px;
@@ -483,6 +481,17 @@ html {
       background-color: #308230;
       color: white;
       box-shadow: 0 10px 30px -8px rgb(0 0 0 / 16%);
+  }
+  .help-section .checkbox{
+    display: flex;
+  }
+  .help-section .checkbox input{
+    width: auto;
+  }
+  .help-section .checkbox label{
+    margin-left: 10px;
+    margin-bottom: 0px;
+    margin-top: 6px;
   }
   /*FIFTH SECTION*/
   .fifth-section{
@@ -1002,7 +1011,7 @@ html {
 
   /*MEDIA QUERIES*/
   /***MEDIA QUERIES***/
-  @media (max-width: 2560px) and (min-width:1441px){
+  /**@media (max-width: 2560px) and (min-width:1441px){
     .banner .text_on_banner{
       top:27%;
       font-size:2vw;
@@ -1016,8 +1025,8 @@ html {
     .banner .Rectangle_2{
       top:66%;
     }
-  }
-  @media(max-width: 1440px) and (min-width:768px){
+  }**/
+  /**@media(max-width: 1440px) and (min-width:768px){
     .banner  .text_on_banner{
       top: 14%;
       font-size: 2vw;
@@ -1030,7 +1039,7 @@ html {
     .banner .Rectangle_2{
       top:62%;
     }
-  }
+  }**/
   @media(min-width:1200px){
     .fifth-section .image-wrapper{
       width:20%;
@@ -1144,9 +1153,9 @@ html {
       -ms-flex-preferred-size: auto;
       flex-basis: auto;
     }
-    .banner > .banner_image{
+    /**.banner > .banner_image{
       width: 45%;
-    }
+    }**/
     .below-slider .wrapper h5,
     .ftr-bottom .text-section2 .heading,
     #testimonial_slider .box-wrapper p,
@@ -1279,7 +1288,7 @@ html {
     .newmenu{
       display: none !important;
      }
-     .banner{
+    /** .banner{
       position: relative; 
       text-align: center;
     }
@@ -1312,7 +1321,7 @@ html {
      top: -2%;
      right: 17%;
      width: 62%;
-   }
+   }**/
     .below-slider .wrapper h5{
       font-size: 16px;
     }
@@ -1424,9 +1433,9 @@ html {
     .mynavbar .mob-logo img{
       max-width: 19%;
     }
-    .banner .Explore_collection{
+    /**.banner .Explore_collection{
       font-size: 2vw;
-    }
+    }**/
     .below-slider .wrapper h5{
       display: none;
     }
@@ -1456,19 +1465,19 @@ html {
       font-size: 2vw;
     }
   }*/
-  @media(max-width: 396px){
+  /**@media(max-width: 396px){
     .banner .Rectangle_2{
        height: auto;
     }
-  }
+  }**/
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 14px;}
   }
   @media (max-width:450px){
-    .banner .text_on_banner{
+    /**.banner .text_on_banner{
       font-size: 13px;
-    }
+    }**/
   }
   #map {
     height: 500px;

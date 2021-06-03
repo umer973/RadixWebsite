@@ -1,11 +1,19 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class CommonService {
+  // url= "http://localhost:49576/api/";
 
-  constructor() { }
+  url=  "http://backofficeservice.theradix.in/api/";
+
+  constructor(private http:HttpClient) { 
+
+  }
 
   /* LOADING MENUS */
   getMenus() {
@@ -94,11 +102,27 @@ export class CommonService {
           },
         ]
       },
-      { "MenuID": 4, "MenuName": "Customers", "path": "customer", },
+     /** { "MenuID": 4, "MenuName": "Customers", "path": "customer", },**/
       { "MenuID": 5, "MenuName": "Partners", "path": "partner", },
       { "MenuID": 8, "MenuName": "Support", "path": "", },
       { "MenuID": 9, "MenuName": "Contact us", "path": "contact-us", },
     ]  
     return Menus;
+  }
+
+  /*enquiry*/
+  insertEnquiry(body){
+
+    let headers= new Headers({'Accept':'Application/json'}) ;
+    return this.http.post(this.url + "SaveEnquiry",body)
+
+  }
+
+  GetClients(){
+    return this.http.get(this.url + "Client?productId=3");
+  }
+  
+  GetPartners(){
+    return this.http.get(this.url + "GetPartners");
   }
 }

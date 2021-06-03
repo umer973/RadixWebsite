@@ -6,43 +6,9 @@
         <hr>
       </div>
       <div class="col-lg-12 col-md-12">
-        <div class="image-wrapper">
-            <img src="https://dummyimage.com/150x100/000/fff" class="img-fluid" alt="image">
-        </div>
-        <div class="image-wrapper">
-            <img src="https://dummyimage.com/150x100/000/fff" class="img-fluid" alt="image">
-        </div>
-        <div class="image-wrapper">
-            <img src="https://dummyimage.com/150x100/000/fff" class="img-fluid" alt="image">
-        </div>
-        <div class="image-wrapper">
-            <img src="https://dummyimage.com/150x100/000/fff" class="img-fluid" alt="image">
-        </div>
-        <div class="image-wrapper">
-            <img src="https://dummyimage.com/150x100/000/fff" class="img-fluid" alt="image">
-        </div>
-        <div class="image-wrapper">
-            <img src="https://dummyimage.com/150x100/000/fff" class="img-fluid" alt="image">
-        </div>
-      </div>
-      <div class="col-lg-12 col-md-12">
-        <div class="image-wrapper">
-            <img src="https://dummyimage.com/150x100/000/fff" class="img-fluid" alt="image">
-        </div>
-        <div class="image-wrapper">
-            <img src="https://dummyimage.com/150x100/000/fff" class="img-fluid" alt="image">
-        </div>
-        <div class="image-wrapper">
-            <img src="https://dummyimage.com/150x100/000/fff" class="img-fluid" alt="image">
-        </div>
-        <div class="image-wrapper">
-            <img src="https://dummyimage.com/150x100/000/fff" class="img-fluid" alt="image">
-        </div>
-        <div class="image-wrapper">
-            <img src="https://dummyimage.com/150x100/000/fff" class="img-fluid" alt="image">
-        </div>
-        <div class="image-wrapper">
-            <img src="https://dummyimage.com/150x100/000/fff" class="img-fluid" alt="image">
+        <div class="image-wrapper" *ngFor="let client of clients">
+            <img src="{{ client.Logo }}" class="img-fluid" alt="image">
+            <p>{{client.ClientName}}</p>
         </div>
       </div>
     </div>
