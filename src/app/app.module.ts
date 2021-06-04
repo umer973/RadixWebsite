@@ -34,7 +34,7 @@ import { HttpClientModule } from '@angular/common/http';
     PartnerComponent,
     CustomerComponent,
     DownloadsComponent,
-    PriceComponent
+    PriceComponent,
   ],
   imports: [
     BrowserModule,

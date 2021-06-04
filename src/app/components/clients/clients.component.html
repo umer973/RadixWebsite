@@ -5,11 +5,9 @@
         <h2>Our Clients</h2> 
         <hr>
       </div>
-      <div class="col-lg-12 col-md-12">
-        <div class="image-wrapper" *ngFor="let client of clients">
+      <div class="col-lg-2 col-md-3 col-sm-3 col-4" *ngFor="let client of clients">
             <img src="{{ client.Logo }}" class="img-fluid" alt="image">
             <p>{{client.ClientName}}</p>
-        </div>
       </div>
     </div>
   </div>

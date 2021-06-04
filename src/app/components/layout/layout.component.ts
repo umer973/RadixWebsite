@@ -5,32 +5,14 @@ import { AfterContentInit, Component, OnInit } from '@angular/core';
   templateUrl: './layout.component.html'
 })
 export class LayoutComponent implements OnInit,AfterContentInit {
-  isLoading: boolean = true;
   constructor() { }
-
-
   ngAfterContentInit(): void {
-   
   }
-
   ngOnInit(): void {
-    //this.hideloader();
-    //this.loadUser();
   }
-/** Function is defined
-        hideloader() {
-          document.getElementById("#loading").animate({
-            top: -200
-          }, 1500);        
-      
-        }
-        loadUser(){
-          let interval = setInterval(() => { 
-            if (this.isLoading) {
-              //You are still waiting
-              document.getElementById("loading")
-            }
-          }, 3000)   
-          this.isLoading = false;
-          clearInterval(interval);**/
+  // When the user clicks on the button, scroll to the top of the document
+  topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  }
 }

@@ -467,6 +467,10 @@ html {
   }
   .help-section > .row > div{
     margin: auto;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px #ccc;
+    border: 6px white solid;
+    padding: 10px;
   }
   .help-section form{
     text-align: center;
@@ -484,6 +488,8 @@ html {
   }
   .help-section .checkbox{
     display: flex;
+    margin: auto;
+    justify-content: center;
   }
   .help-section .checkbox input{
     width: auto;
@@ -495,10 +501,14 @@ html {
   }
   /*FIFTH SECTION*/
   .fifth-section{
-    margin-bottom: 35px;
+    margin-bottom: 20px;
   }
   .fifth-section h2{
     margin-bottom: 0px;
+  }
+  .fifth-section > .row{
+    padding: 40px 0px 0px;
+    justify-content: center;
   }
   .fifth-section hr{
     border-top: 4px solid #303030;
@@ -506,12 +516,10 @@ html {
     margin-bottom: 35px;
   }
   .fifth-section .trending_row > div{ 
-    display: flex; 
-    justify-content: center;
     margin-bottom: 10px;
   }
   .fifth-section .trending_row > div:nth-of-type(1){
-   display: initial;
+    margin-bottom: 0px;;
   }
   /*FOOTER*/
   .ftr-bottom .cpyryt{
@@ -652,6 +660,9 @@ html {
   /*partner*/
   .partner,.customer{
     margin: 20px 0px 0px;
+  }
+  .partner > .row{
+     justify-content: center;
   }
   .partner h1{
     margin-bottom: 20px;
@@ -894,6 +905,16 @@ html {
   .downloads .eight-row{
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  #form_popup{
+    background-color:#f5f5f5;
+    position:absolute;
+    margin:0 auto;
+    display:none;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 50px 1px #000;
   }
   /*Price*/
   .price{

@@ -1,6 +1,6 @@
 <div class="container-fluid help-section">
     <div class="row">
-        <div class="col-lg-6 col-md-10">
+        <div class="col-lg-6 col-md-6 col-sm-10">
             <h2>May I Help you?</h2>
             <hr>
             <form  [formGroup]="enquiryForm">
@@ -45,7 +45,7 @@
                       <label for="mobile-number">Mobile Number</label>
                       <input type="text" maxlength="12" formControlName="ContactNo" placeholder="Contact" class="form-control"  required>
                       <div *ngIf="(f.ContactNo.invalid && f.ContactNo.touched) || f.ContactNo.dirty">
-                        <small *ngIf="f.ContactNo.errors?.required" class="text-danger">Email is required</small>
+                        <small *ngIf="f.ContactNo.errors?.required" class="text-danger">Mobile Number is required</small>
                         <!--question mark(?) is a safe navigation operator-->
                         <small *ngIf="f.ContactNo.errors?.pattern" class="text-danger"></small>
                        
@@ -57,7 +57,7 @@
                         <label for="discription">Description</label>
                         <textarea type="message" rows="3" formControlName="Comments" class="form-control" required></textarea>
                         <div *ngIf="(f.Comments.invalid && f.Comments.touched) || f.Comments.dirty">
-                          <small *ngIf="f.Comments.errors?.required" class="text-danger">Email is required</small>
+                          <small *ngIf="f.Comments.errors?.required" class="text-danger">Description is required</small>
                           <!--question mark(?) is a safe navigation operator-->
                           <small *ngIf="f.Comments.errors?.pattern" class="text-danger"></small>
                          
@@ -67,7 +67,7 @@
                       <input type="checkbox" id="user" formControlName="ExistingUser" class="form-control" required  value="User">
                       <label for="user">Existing User</label><br>
                       <div *ngIf="(f.ExistingUser.invalid && f.ExistingUser.touched) || f.ExistingUser.dirty">
-                        <small *ngIf="f.ExistingUser.errors?.required" class="text-danger">Email is required</small>
+                        <small *ngIf="f.ExistingUser.errors?.required" class="text-danger">Required information</small>
                         <!--question mark(?) is a safe navigation operator-->
                         <small *ngIf="f.ExistingUser.errors?.pattern" class="text-danger"></small>
                        
