@@ -17,7 +17,12 @@ import { PartnerComponent } from './components/partner/partner.component';
 import { CustomerComponent } from './components/customer/customer.component';
 import { DownloadsComponent } from './components/downloads/downloads.component';
 import { PriceComponent } from './components/price/price.component';
+<<<<<<< HEAD
 import {HttpClientModule} from '@angular/common/http'
+=======
+import { HttpClientModule } from '@angular/common/http';
+
+>>>>>>> 629071a2d42ce8844d529de9cf9cf7697d9c743e
 
 @NgModule({
   declarations: [
@@ -34,7 +39,10 @@ import {HttpClientModule} from '@angular/common/http'
     CustomerComponent,
     DownloadsComponent,
     PriceComponent,
+<<<<<<< HEAD
     
+=======
+>>>>>>> 629071a2d42ce8844d529de9cf9cf7697d9c743e
   ],
   imports: [
     BrowserModule,
@@ -43,7 +51,11 @@ import {HttpClientModule} from '@angular/common/http'
     FormsModule,
     ReactiveFormsModule,
     LayoutModule,
+<<<<<<< HEAD
     HttpClientModule
+=======
+    HttpClientModule,
+>>>>>>> 629071a2d42ce8844d529de9cf9cf7697d9c743e
   ],
   providers: [],
   bootstrap: [AppComponent]

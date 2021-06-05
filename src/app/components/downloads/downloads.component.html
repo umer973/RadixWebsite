@@ -11,7 +11,7 @@
                     <div class="img-box">                                                
                         <a href="#" class=""><img src="https://dummyimage.com/150x158/000/fff" alt="image"></a>
                     </div>
-                    <h4><a href="#" class="btn">
+                    <h4><a href="javascript:void(0)" class="btn" (click)="open_popup()">
                             <span class="fa fa-download" style="margin-right: 4px;"></span>Download now
                         </a>
                     </h4>
@@ -179,4 +179,38 @@
     <div class="row eight-row">
         <h2 class="heading">Become a <span>smart user. </span> Switch to <span> Margï¿½ Erp</span></h2>
     </div>
+</div>
+<div id="form_popup" class="col-lg-6 col-md-6 col-sm-10 ">
+    <h2>Download Setup</h2>
+    <a href="javascript:void(0)" class="closebtn" (click)="close_popup()">&times;</a>
+    <hr>
+    <form  [formGroup]="">
+        <div class="form-row">
+          <div class="form-group col-md-6 col-sm-6">
+            <label for="last-name">Email</label>
+            <input type="email" formControlName="Email" placeholder="Email" class="form-control" required>
+          </div>
+        </div>
+        <div class="form-group col-md-6 col-sm-6">
+            <label for="full-name">Full Name</label>
+            <input type="text"  formControlName="FullName" placeholder="Full Name" class="form-control" required>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6 col-sm-6">
+              <label for="trade">How did you come to know Marg</label>
+              <select id="trade"  formControlName="Trade"  class="form-control" required>
+                <option value="1">Manufacturer</option>
+                <option value="2">Distribution</option>
+                <option value="3">Retail</option>
+                <option value="4">Service</option>
+                <option value="4">others</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6 col-sm-6">
+              <label for="mobile-number">Mobile Number</label>
+              <input type="text" maxlength="12" formControlName="ContactNo" placeholder="Contact" class="form-control"  required>
+            </div>
+        </div>
+        <button type="submit" [disabled]="" class="btn" (click)="submit()">Submit</button>
+    </form>
 </div>

@@ -10,5 +10,12 @@ export class DownloadsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+/*popup*/
+ open_popup() {
+  document.getElementById("form_popup").style.display = "block";
+ }
+ close_popup() {
+  document.getElementById("form_popup").style.display = "none";
+ }
+ 
 }

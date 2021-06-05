@@ -3,29 +3,73 @@
         <a href="#"><img src="https://dummyimage.com/1980x800/#308230" class="img-fluid" alt="image"></a>
     </div>
 </div>-->
+<!--BANNER-->
 <div class="container-fluid">
-  <div class="row">
-      <div class="col-lg-12 col-md-12" style="padding: 0;">
-         <div class="banner">
-            <img src="https://dummyimage.com/1980x700/fff/fff" alt="BANNER" 
-              class="img-fluid" style="width:100%;">
-            <p class="text_on_banner">
-              Manage Business Manufacturing, Wholesale, Retail, Services with Marg ERP Business Solution.
-               Single Software for All business (Business BackBone). 
-            </p>
-            <!--<p class="text2">
-               Neque porro quisquam est qui dolorem ipsum quia
-            </p>-->
-            <div class="Rectangle_2">
-              <a href="#" target="_blank">
-                <p class="Explore_collection">
-                  7 days Trial
-                </p>
-              </a>
-            </div>   
-            <img src="assets/images/banner.jpg" class="banner_image img-fluid" alt="banner_image" >           
-         </div>
+  <div class="row top-banner">
+    <!--Hidden on mobile phones,visible from 768 -->
+    <div id="demo" class="carousel slide d-none d-md-block" data-ride="carousel">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+      </ul>
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+      <!-- The slideshow -->
+      <div class="carousel-inner padding-0">
+        <div class="carousel-item active">
+          <a href="#"><img src="assets/images/SLIDE01.jpg" class="img-fluid" alt="image"></a>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/SLIDE02.jpg" class="img-fluid" alt="image">
+        </div>
+        <div class="carousel-item">
+          <a href="#"><img src="assets/images/SLIDE03.jpg" class="img-fluid" alt="image"></a>
+        </div> 
+        <div class="carousel-item">
+          <a href="#"><img src="assets/images/SLIDE04.jpg" class="img-fluid" alt="image"></a>
+        </div>
       </div>
+    </div>
+    <!--Hidden on desktop,visible upto 767 -->
+    <div id="demo-mob" class="carousel slide d-md-none" data-ride="carousel">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo-mob" data-slide-to="0" class="active"></li>
+        <li data-target="#demo-mob" data-slide-to="1"></li>
+        <li data-target="#demo-mob" data-slide-to="2"></li>
+        <li data-target="#demo-mob" data-slide-to="3"></li>
+      </ul>
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo-mob" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo-mob" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+      <!-- The slideshow -->
+      <div class="carousel-inner padding-0">
+        <div class="carousel-item active">
+          <a href="#"><img src="assets/images/SLIDE01.jpg" class="img-fluid" alt="image"></a>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/SLIDE02.jpg" class="img-fluid" alt="image">
+        </div>
+        <div class="carousel-item">
+          <a href="#"><img src="assets/images/SLIDE03.jpg" class="img-fluid" alt="image"></a>
+        </div> 
+        <div class="carousel-item">
+          <a href="#"><img src="assets/images/SLIDE04.jpg" class="img-fluid" alt="image"></a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <!--Ist section-->
@@ -211,4 +255,3 @@
   </div>
   <app-enquiry></app-enquiry>
   <app-clients></app-clients>
-  <button (click)="topFunction()" id="scrollToTopBtn" title="Go to top">☝️</button>

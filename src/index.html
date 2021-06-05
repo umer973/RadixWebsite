@@ -50,6 +50,16 @@
       margin: auto;
     }
   </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KWK3K049T"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KWK3K049T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-4KWK3K049T');
+</script>
 </head>
 
 <body id="body">
@@ -67,24 +77,15 @@
   document.onreadystatechange = function () {
     if (document.readyState !== "complete") {
       document.getElementById(
-        "body").style.visible = "hidden";
+        "body").visible = "hidden";
       document.getElementById(
-        "loader").style.visible = "visible";
+        "loader").visible = "visible";
     } else {
       document.getElementById(
-        "loader").style.display = "none";
+        "loader").display = "none";
       document.getElementById(
-        "body").style.visible = "visible";
+        "body").visible = "visible";
     }
   };
 </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KWK3K049T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-
-  gtag('config', 'G-4KWK3K049T');
-</script>

@@ -2,14 +2,25 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment';
 
+
+
 @Injectable({
   providedIn: 'root'
 })
 export class CommonService {
+  // url= "http://localhost:49576/api/";
 
+  url=  "http://backofficeservice.theradix.in/api/";
+
+<<<<<<< HEAD
   private API_URL = environment.API_URL;
 
   constructor(private http: HttpClient) { }
+=======
+  constructor(private http:HttpClient) { 
+
+  }
+>>>>>>> 629071a2d42ce8844d529de9cf9cf7697d9c743e
 
   /* LOADING MENUS */
   getMenus() {
@@ -104,7 +115,7 @@ export class CommonService {
           },
         ]
       },
-      { "MenuID": 4, "MenuName": "Customers", "path": "customer", },
+     /** { "MenuID": 4, "MenuName": "Customers", "path": "customer", },**/
       { "MenuID": 5, "MenuName": "Partners", "path": "partner", },
       { "MenuID": 8, "MenuName": "Support", "path": "", },
       { "MenuID": 9, "MenuName": "Contact us", "path": "contact-us", },
@@ -112,6 +123,7 @@ export class CommonService {
     return Menus;
   }
 
+<<<<<<< HEAD
   getClients() {
 
     return this.http.get(this.API_URL + "Client?productId=2");
@@ -125,4 +137,21 @@ export class CommonService {
   }
 
 
+=======
+  /*enquiry*/
+  insertEnquiry(body){
+
+    let headers= new Headers({'Accept':'Application/json'}) ;
+    return this.http.post(this.url + "SaveEnquiry",body)
+
+  }
+
+  GetClients(){
+    return this.http.get(this.url + "Client?productId=3");
+  }
+  
+  GetPartners(){
+    return this.http.get(this.url + "GetPartners");
+  }
+>>>>>>> 629071a2d42ce8844d529de9cf9cf7697d9c743e
 }
