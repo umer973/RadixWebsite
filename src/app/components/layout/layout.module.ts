@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayoutRoutingModule } from './layout.routing.module';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 
@@ -8,7 +9,8 @@ import { LayoutRoutingModule } from './layout.routing.module';
   declarations: [],
   imports: [
     CommonModule,
-    LayoutRoutingModule
+    LayoutRoutingModule,
+    BrowserModule
   ]
 })
 export class LayoutModule { }

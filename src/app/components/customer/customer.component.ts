@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from 'src/app/services/common.service';
 
 @Component({
   selector: 'app-customer',
@@ -6,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerComponent implements OnInit {
 
-  constructor() { }
+  clients: any;
+
+  constructor(private service: CommonService) { }
 
   ngOnInit(): void {
+
+    this.service.getClients().subscribe(res => {
+      let result = res;
+      this.clients = result.Result;
+
+    }, err => {
+
+    })
   }
+
+
 
 }
