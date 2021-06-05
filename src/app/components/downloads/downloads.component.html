@@ -180,37 +180,52 @@
         <h2 class="heading">Become a <span>smart user. </span> Switch to <span> Margï¿½ Erp</span></h2>
     </div>
 </div>
-<div id="form_popup" class="col-lg-6 col-md-6 col-sm-10 ">
-    <h2>Download Setup</h2>
-    <a href="javascript:void(0)" class="closebtn" (click)="close_popup()">&times;</a>
+<div id="form_popup" class="col-lg-5 col-md-6 col-sm-8 col-12">
+    <div class="top">
+        <h2>Download Setup</h2>
+        <a href="javascript:void(0)" class="closebtn" (click)="close_popup()">&times;</a>
+    </div>
     <hr>
+    <p>In order to download your preferred software, please fill this information form.
+        All fields are required to get access of the software and its features.
+        Your privacy is important to us. We will not share your contact information with any external parties.
+    </p>
     <form  [formGroup]="">
         <div class="form-row">
-          <div class="form-group col-md-6 col-sm-6">
-            <label for="last-name">Email</label>
-            <input type="email" formControlName="Email" placeholder="Email" class="form-control" required>
-          </div>
-        </div>
-        <div class="form-group col-md-6 col-sm-6">
-            <label for="full-name">Full Name</label>
-            <input type="text"  formControlName="FullName" placeholder="Full Name" class="form-control" required>
+            <div class="form-group col-md-12 col-sm-12">
+                <label for="mobile-number">Mobile Number</label>
+                <input type="text" maxlength="12" formControlName="ConatcNo" placeholder="Contact Number" class="form-control"  required>
+            </div>
         </div>
         <div class="form-row">
-            <div class="form-group col-md-6 col-sm-6">
-              <label for="trade">How did you come to know Marg</label>
-              <select id="trade"  formControlName="Trade"  class="form-control" required>
-                <option value="1">Manufacturer</option>
-                <option value="2">Distribution</option>
-                <option value="3">Retail</option>
-                <option value="4">Service</option>
-                <option value="4">others</option>
+            <div class="form-group col-md-12 col-sm-12">
+                <label for="full-name">Name</label>
+                <input type="text"  formControlName="Name" placeholder="Full Name" class="form-control" required>
+            </div>
+        </div>   
+        <div class="form-row">
+            <div class="form-group col-md-12 col-sm-12">
+                <label for="last-name">Email</label>
+                <input type="email" formControlName="Email" placeholder="Email" class="form-control" required>
+            </div>
+            <div class="form-group col-md-12 col-sm-12 how-come">
+              <label for="source">How did you come to know Marg</label>
+              <select id="source"  formControlName="Source"  class="form-control" required>
+                <option value="1">I am exciting user</option>
+                <option value="2">SMS</option>
+                <option value="3">Facebook</option>
+                <option value="4">Google</option>
+                <option value="4">Word of Mouth</option>
+                <option value="4">Newspaper/ Magzines</option>
               </select>
-            </div>
-            <div class="form-group col-md-6 col-sm-6">
-              <label for="mobile-number">Mobile Number</label>
-              <input type="text" maxlength="12" formControlName="ContactNo" placeholder="Contact" class="form-control"  required>
-            </div>
+            </div> 
+            <div class="form-group col-md-12 col-sm-12 checkbox">
+                <input type="checkbox" id="user" formControlName="ExistingUser" class="form-control" required  value="User">
+                <label for="user"> I Have read & accept T&C.</label><br>
+            </div> 
         </div>
-        <button type="submit" [disabled]="" class="btn" (click)="submit()">Submit</button>
+        <div style="text-align: center;">
+            <button type="submit" [disabled]="" class="btn" (click)="submit()">Submit</button>
+        </div>
     </form>
 </div>

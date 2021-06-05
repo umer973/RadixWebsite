@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Downloads} from 'src/app/model/downloads.model';
+import { CommonService } from 'src/app/Services/common.service';
 
 @Component({
   selector: 'app-downloads',
@@ -6,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DownloadsComponent implements OnInit {
 
-  constructor() { }
+  downloads :Downloads;
+  constructor( private service: CommonService) { }
 
   ngOnInit(): void {
   }

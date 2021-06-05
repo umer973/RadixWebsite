@@ -435,12 +435,14 @@ html {
     color:#303030;
   }
   .fourth-section .row button,
-  .help-section button{
+  .help-section button,
+  #form_popup form  button{
     background-color:#308230;
   }
   .fourth-section .row button,
   .second-section .row button,
-  .help-section button
+  .help-section button,
+  #form_popup form  button
   {
     padding: 0.5em 4.2em;
     border-radius: 23px;
@@ -907,14 +909,58 @@ html {
     margin-bottom: 20px;
   }
   #form_popup{
-    background-color:#f5f5f5;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px #ccc;
+    border: 6px white solid;
+    transform: translate(-50%, 0%);
+    padding: 10px;
     position:absolute;
     margin:0 auto;
     display:none;
-    top: 60%;
+    top: 20%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 0px 50px 1px #000;
+  }
+  #form_popup .top{
+    display:flex;
+  }
+  #form_popup .top h2{
+    margin-left: auto;
+  }
+  #form_popup .top a{
+    margin-left: auto;
+    color: black;
+    font-size: 20px;
+  }
+  #form_popup p {
+    text-align: center;
+    font-size: 14px;
+  }
+  #form_popup .form-group {
+   display: flex;
+  }
+  #form_popup .form-group > label{
+    width: 30%;
+  }
+  #form_popup .form-group > input,
+  #form_popup .form-group > select{
+    width: 70%;
+  }
+  #form_popup .checkbox{
+    margin: auto;
+    justify-content: center;
+  }
+  #form_popup .checkbox input {
+    width: auto;
+  }
+  #form_popup .checkbox label {
+    margin-bottom: 0px;
+    margin-top: 6px;
+    text-align: center;
+    width: auto;
+    margin-left: 10px;
+  }
+  #form_popup .how-come{
+    margin-bottom: 0px;
   }
   /*Price*/
   .price{

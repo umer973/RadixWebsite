@@ -65,7 +65,7 @@
                     </div>
                     <div class="form-group col-md-12 checkbox">
                       <input type="checkbox" id="user" formControlName="ExistingUser" class="form-control" required  value="User">
-                      <label for="user">Existing User</label><br>
+                      <label for="user">Existing User</label>
                       <div *ngIf="(f.ExistingUser.invalid && f.ExistingUser.touched) || f.ExistingUser.dirty">
                         <small *ngIf="f.ExistingUser.errors?.required" class="text-danger">Required information</small>
                         <!--question mark(?) is a safe navigation operator-->
