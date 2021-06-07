@@ -3,25 +3,18 @@ import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment';
 
 
-
 @Injectable({
   providedIn: 'root'
 })
 export class CommonService {
   // url= "http://localhost:49576/api/";
+     url=  "http://backofficeservice.theradix.in/api/";
 
-  url=  "http://backofficeservice.theradix.in/api/";
 
-<<<<<<< HEAD
   private API_URL = environment.API_URL;
-
-  constructor(private http: HttpClient) { }
-=======
   constructor(private http:HttpClient) { 
 
   }
->>>>>>> 629071a2d42ce8844d529de9cf9cf7697d9c743e
-
   /* LOADING MENUS */
   getMenus() {
 
@@ -123,27 +116,10 @@ export class CommonService {
     return Menus;
   }
 
-<<<<<<< HEAD
-  getClients() {
-
-    return this.http.get(this.API_URL + "Client?productId=2");
-
-  }
-
-  getPartners() {
-
-    return this.http.get(this.API_URL + "GetPartners");
-
-  }
-
-
-=======
   /*enquiry*/
   insertEnquiry(body){
-
     let headers= new Headers({'Accept':'Application/json'}) ;
     return this.http.post(this.url + "SaveEnquiry",body)
-
   }
 
   GetClients(){
@@ -153,5 +129,4 @@ export class CommonService {
   GetPartners(){
     return this.http.get(this.url + "GetPartners");
   }
->>>>>>> 629071a2d42ce8844d529de9cf9cf7697d9c743e
 }

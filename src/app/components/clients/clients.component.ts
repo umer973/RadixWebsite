@@ -1,26 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
 import { CommonService } from 'src/app/services/common.service';
-=======
-import { CommonService } from 'src/app/Services/common.service';
->>>>>>> 629071a2d42ce8844d529de9cf9cf7697d9c743e
 
 @Component({
   selector: 'app-clients',
   templateUrl: './clients.component.html'
 })
 export class ClientsComponent implements OnInit {
-<<<<<<< HEAD
 
   clients: any;
   constructor(private service: CommonService) { }
-
-  ngOnInit(): void {
-
-    
-=======
-  clients: any;
-  constructor( private service: CommonService) { }
 
   ngOnInit(): void {
      /**this.clients  = this.getClients();
@@ -30,7 +18,6 @@ export class ClientsComponent implements OnInit {
       this.clients=response.Result;
       console.log(this.clients);
     })
->>>>>>> 629071a2d42ce8844d529de9cf9cf7697d9c743e
   }
   
   /**getClients() {
