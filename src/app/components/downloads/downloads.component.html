@@ -180,7 +180,7 @@
         <h2 class="heading">Become a <span>smart user. </span> Switch to <span> Margï¿½ Erp</span></h2>
     </div>
 </div>
-<div id="form_popup" class="col-lg-5 col-md-6 col-sm-8 col-12">
+<div id="form_popup" class="col-lg-7 col-md-7 col-sm-8 col-12">
     <div class="top">
         <h2>Download Setup</h2>
         <a href="javascript:void(0)" class="closebtn" (click)="close_popup()">&times;</a>
@@ -190,23 +190,35 @@
         All fields are required to get access of the software and its features.
         Your privacy is important to us. We will not share your contact information with any external parties.
     </p>
-    <form  [formGroup]="">
+    <form [formGroup]="downloadForm" >
         <div class="form-row">
             <div class="form-group col-md-12 col-sm-12">
                 <label for="mobile-number">Mobile Number</label>
-                <input type="text" maxlength="12" formControlName="ConatcNo" placeholder="Contact Number" class="form-control"  required>
+                <input type="text" maxlength="12" formControlName="ContactNo" placeholder="Mobile Number" class="form-control"  required>
+                <div *ngIf="(f.ContactNo.invalid && f.ContactNo.touched) || f.ContactNo.dirty">
+                    <small *ngIf="f.ContactNo.errors?.required" class="text-danger">Mobile Number is required</small>
+                    <!--question mark(?) is a safe navigation operator-->
+                </div>
             </div>
         </div>
         <div class="form-row">
             <div class="form-group col-md-12 col-sm-12">
                 <label for="full-name">Name</label>
                 <input type="text"  formControlName="Name" placeholder="Full Name" class="form-control" required>
+                <div *ngIf="(f.Name.invalid && f.Name.touched) || f.Name.dirty">
+                    <small *ngIf="f.Name.errors?.required" class="text-danger">Name is required</small>
+                    <!--question mark(?) is a safe navigation operator-->
+                </div>
             </div>
         </div>   
         <div class="form-row">
             <div class="form-group col-md-12 col-sm-12">
                 <label for="last-name">Email</label>
                 <input type="email" formControlName="Email" placeholder="Email" class="form-control" required>
+                <div *ngIf="(f.Email.invalid && f.Email.touched) || f.Email.dirty">
+                    <small *ngIf="f.Email.errors?.required" class="text-danger">Email is required</small>
+                    <!--question mark(?) is a safe navigation operator-->
+                </div>
             </div>
             <div class="form-group col-md-12 col-sm-12 how-come">
               <label for="source">How did you come to know Marg</label>
@@ -218,14 +230,18 @@
                 <option value="4">Word of Mouth</option>
                 <option value="4">Newspaper/ Magzines</option>
               </select>
+              <div *ngIf="(f.Source.invalid && f.Source.touched) || f.Source.dirty">
+                <small *ngIf="f.Source.errors?.required" class="text-danger">Source is required</small>
+                <!--question mark(?) is a safe navigation operator-->
+            </div>
             </div> 
-            <div class="form-group col-md-12 col-sm-12 checkbox">
+            <!--<div class="form-group col-md-12 col-sm-12 checkbox">
                 <input type="checkbox" id="user" formControlName="ExistingUser" class="form-control" required  value="User">
                 <label for="user"> I Have read & accept T&C.</label><br>
-            </div> 
+            </div> -->
         </div>
         <div style="text-align: center;">
-            <button type="submit" [disabled]="" class="btn" (click)="submit()">Submit</button>
+            <button type="submit" [disabled]="!downloadForm.valid" (click)="onSubmit()" class="btn">Submit</button>
         </div>
     </form>
 </div>

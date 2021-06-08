@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { CommonService } from 'src/app/services/common.service';
+import { HelperService } from 'src/app/Services/helper.service';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +9,7 @@ export class HeaderComponent implements OnInit {
 
   menus: any;
 
-  constructor(private commonService: CommonService) { }
+  constructor(private commonService: HelperService) { }
 
   ngOnInit(): void {
     this.getMenus();
@@ -26,9 +26,8 @@ checkScroll() {
   /* LOADING MENUS */
   getMenus() {
     this.menus = [] = this.commonService.getMenus();
-    console.log(this.menus, " -- Load Menus--");
+    console.log(this.menus);
   }
-
 
   /*MENU CONDITION*/
   getClass(menu) {

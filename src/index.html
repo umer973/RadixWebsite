@@ -52,28 +52,28 @@
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KWK3K049T"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KWK3K049T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KWK3K049T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-4KWK3K049T');
-</script>
+    gtag('config', 'G-4KWK3K049T');
+  </script>
 </head>
 
 <body id="body">
-  
+
   <app-root>
-    <div id="loader" class="center"></div>
-    
-    
+    <!-- <div id="loader" class="center"></div> -->
+
+
   </app-root>
 </body>
 
 </html>
 
-<script>
+<!-- <script>
   document.onreadystatechange = function () {
     if (document.readyState !== "complete") {
       document.getElementById(
@@ -81,11 +81,14 @@
       document.getElementById(
         "loader").visible = "visible";
     } else {
-      document.getElementById(
-        "loader").display = "none";
+      var element = document.getElementById("loader");
+      if (element != undefined) {
+        document.getElementById(
+          "loader").display = "none";
+      }
+
       document.getElementById(
         "body").visible = "visible";
     }
   };
-</script>
-
+</script> -->

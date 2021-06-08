@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonService } from 'src/app/services/common.service';
+import { HelperService } from 'src/app/Services/helper.service';
+
 
 @Component({
   selector: 'app-clients',
@@ -8,14 +9,14 @@ import { CommonService } from 'src/app/services/common.service';
 export class ClientsComponent implements OnInit {
 
   clients: any;
-  constructor(private service: CommonService) { }
+  constructor(private service: HelperService) { }
 
   ngOnInit(): void {
      /**this.clients  = this.getClients();
     console.log(this.clients, " -- Load Clients--");**/
       this.service.GetClients().subscribe(res=>{
       let response=res;
-      this.clients=response.Result;
+      this.clients=response;
       console.log(this.clients);
     })
   }

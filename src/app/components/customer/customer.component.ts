@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonService } from 'src/app/services/common.service';
+
+import { HelperService } from 'src/app/Services/helper.service';
 
 @Component({
   selector: 'app-customer',
@@ -9,19 +10,14 @@ export class CustomerComponent implements OnInit {
 
   clients: any;
 
-  constructor(private service: CommonService) { }
+  constructor(private service: HelperService) { }
 
   ngOnInit(): void {
 
-    this.service.getClients().subscribe(res => {
+    this.service.GetClients().subscribe(res => {
       let result = res;
-      this.clients = result.Result;
-
-    }, err => {
-
+      this.clients = result;
+      console.log(this.clients);
     })
   }
-
-
-
 }

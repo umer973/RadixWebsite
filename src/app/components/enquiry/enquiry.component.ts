@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { Enquiry } from 'src/app/model/enquiry.model';
-import { CommonService } from 'src/app/Services/common.service';
+import { HelperService } from 'src/app/Services/helper.service';
 
 @Component({
   selector: 'app-enquiry',
@@ -12,7 +12,7 @@ export class EnquiryComponent implements OnInit {
   enquiryForm: FormGroup;
   isSubmitted: false;
   enquiry: Enquiry;
-  constructor(private formBuilder: FormBuilder, private service: CommonService) { }
+  constructor(private formBuilder: FormBuilder, private service: HelperService) { }
 
 
   ngOnInit(): void {

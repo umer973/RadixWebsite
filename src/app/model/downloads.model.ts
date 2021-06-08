@@ -5,9 +5,7 @@ export class Downloads {
 
     public Email: string;
 
-    public ConatcNo: number;
+    public ContactNo: number;
 
     public Source: string;
-
-    public ExistingUser: string;
 }

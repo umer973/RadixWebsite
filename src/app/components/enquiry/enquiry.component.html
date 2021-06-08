@@ -9,9 +9,8 @@
                     <label for="full-name">Full Name</label>
                     <input type="text"  formControlName="FullName" placeholder="Full Name" class="form-control" required>
                     <div *ngIf="(f.FullName.invalid && f.FullName.touched) || f.FullName.dirty">
-                      <small *ngIf="f.FullName.errors?.required" class="text-danger">FulltName is required</small>
+                      <small *ngIf="f.FullName.errors?.required" class="text-danger">FullName is required</small>
                       <!--question mark(?) is a safe navigation operator-->
-                    
                     </div>
                   </div>
                   <div class="form-group col-md-6 col-sm-6">
@@ -66,7 +65,8 @@
                     <div class="form-group col-md-12 checkbox">
                       <input type="checkbox" id="user" formControlName="ExistingUser" class="form-control" required  value="User">
                       <label for="user">Existing User</label>
-                      <div *ngIf="(f.ExistingUser.invalid && f.ExistingUser.touched) || f.ExistingUser.dirty">
+                      <div *ngIf="(f.ExistingUser.invalid && f.ExistingUser.touched) || f.ExistingUser.dirty"
+                      style="margin-top: 5px; margin-left: 10px;">
                         <small *ngIf="f.ExistingUser.errors?.required" class="text-danger">Required information</small>
                         <!--question mark(?) is a safe navigation operator-->
                         <small *ngIf="f.ExistingUser.errors?.pattern" class="text-danger"></small>
