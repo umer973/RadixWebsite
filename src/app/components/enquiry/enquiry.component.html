@@ -7,9 +7,11 @@
                 <div class="form-row">
                   <div class="form-group col-md-6 col-sm-6">
                     <label for="full-name">Full Name</label>
-                    <input type="text"  formControlName="FullName" placeholder="Full Name" class="form-control" required>
+                    <input type="text"  formControlName="FullName" placeholder="Full Name" class="form-control" 
+                    ngModel pattern="[a-zA-Z ]*">
                     <div *ngIf="(f.FullName.invalid && f.FullName.touched) || f.FullName.dirty">
                       <small *ngIf="f.FullName.errors?.required" class="text-danger">FullName is required</small>
+                      <small class="text-danger" *ngIf="f.FullName.errors?.pattern">Please provide a valid name</small>
                       <!--question mark(?) is a safe navigation operator-->
                     </div>
                   </div>
@@ -19,7 +21,7 @@
                     <div *ngIf="(f.Email.invalid && f.Email.touched) || f.Email.dirty">
                       <small *ngIf="f.Email.errors?.required" class="text-danger">Email is required</small>
                       <!--question mark(?) is a safe navigation operator-->
-                      <small *ngIf="f.Email.errors?.pattern" class="text-danger"></small>
+                      <small class="text-danger" *ngIf="f.Email.errors?.pattern">Please provide a valid email address</small>
                      
                     </div>
                   </div>
@@ -27,7 +29,7 @@
                 <div class="form-row">
                     <div class="form-group col-md-6 col-sm-6">
                       <label for="trade">Trade</label>
-                      <select id="trade"  formControlName="Trade"  class="form-control" required>
+                      <select id="trade"  formControlName="Trade"  class="form-control">
                         <option value="1">Manufacturer</option>
                         <option value="2">Distribution</option>
                         <option value="3">Retail</option>
@@ -42,11 +44,13 @@
                     </div>
                     <div class="form-group col-md-6 col-sm-6">
                       <label for="mobile-number">Mobile Number</label>
-                      <input type="text" maxlength="12" formControlName="ContactNo" placeholder="Contact" class="form-control"  required>
+                      <input type="text" maxlength="12" formControlName="ContactNo" placeholder="Contact" class="form-control"  
+                      ngModel pattern="^((\\+91-?)|0)?[0-9]{10}$">
                       <div *ngIf="(f.ContactNo.invalid && f.ContactNo.touched) || f.ContactNo.dirty">
                         <small *ngIf="f.ContactNo.errors?.required" class="text-danger">Mobile Number is required</small>
                         <!--question mark(?) is a safe navigation operator-->
-                        <small *ngIf="f.ContactNo.errors?.pattern" class="text-danger"></small>
+                        <small class="text-danger" *ngIf="f.ContactNo.errors?.pattern">Please provide a valid Mobile
+                          Number</small>
                        
                       </div>
                     </div>

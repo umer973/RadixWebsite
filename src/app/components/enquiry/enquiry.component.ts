@@ -26,8 +26,8 @@ export class EnquiryComponent implements OnInit {
     this.enquiryForm = this.formBuilder.group({
       FullName: ['', Validators.required],
       Trade: ['', Validators.required],
-      Email: ['', Validators.required],
-      ContactNo: ['', Validators.required],
+      Email: ['', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]],
+      ContactNo: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(11), Validators.pattern("[0-9]*$")]],
       Comments: ['', Validators.required],
       ExistingUser: ['', Validators.required],
     });
@@ -56,7 +56,7 @@ export class EnquiryComponent implements OnInit {
         if (result.StatusCode == 200) {
                   
           if(result.Result!=undefined || result.Result!=null){
-            alert('Enquiry Submitted')
+            alert('Enquiry Submitted');
             this.enquiryForm.reset();
           }
           else{
