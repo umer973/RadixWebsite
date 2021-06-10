@@ -109,9 +109,9 @@ export class CommonService {
         ]
       },
      /** { "MenuID": 4, "MenuName": "Customers", "path": "customer", },**/
-      { "MenuID": 5, "MenuName": "Partners", "path": "partner", },
-      { "MenuID": 8, "MenuName": "Support", "path": "", },
-      { "MenuID": 9, "MenuName": "Contact us", "path": "contact-us", },
+      { "MenuID": 4, "MenuName": "Partners", "path": "partner", },
+      { "MenuID": 5, "MenuName": "Support", "path": "", },
+      { "MenuID": 6, "MenuName": "Contact us", "path": "contact-us", },
     ]
     return Menus;
   }

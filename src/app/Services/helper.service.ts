@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class HelperService {
 
  // url= "http://localhost:49576/api/";
- url=  "http://backofficeservice.theradix.in/api/";
+ //url=  "http://backofficeservice.theradix.in/api/";
 
 
  private API_URL = environment.API_URL;
@@ -21,7 +21,7 @@ export class HelperService {
 
   let headers = new HttpHeaders();
   headers.append('Content-Type', 'application/json');
-  return this.http.get(this.url + { headers: headers });
+  return this.http.get(this.API_URL + { headers: headers });
 }
 
  /* LOADING MENUS */
@@ -118,9 +118,9 @@ export class HelperService {
        ]
      },
     /** { "MenuID": 4, "MenuName": "Customers", "path": "customer", },**/
-     { "MenuID": 5, "MenuName": "Partners", "path": "partner", },
-     { "MenuID": 8, "MenuName": "Support", "path": "", },
-     { "MenuID": 9, "MenuName": "Contact us", "path": "contact-us", },
+     { "MenuID": 4, "MenuName": "Partners", "path": "partner", },
+     { "MenuID": 5, "MenuName": "Support", "path": "", },
+     { "MenuID": 6, "MenuName": "Contact us", "path": "contact-us", },
    ]
    return Menus;
  }
@@ -128,19 +128,23 @@ export class HelperService {
  /*enquiry*/
  insertEnquiry(body){
    let headers= new Headers({'Accept':'Application/json'}) ;
-   return this.http.post(this.url + "SaveEnquiry",body)
+   return this.http.post(this.API_URL + "SaveEnquiry",body)
  }
 /*clients*/
  GetClients(){
-   return this.http.get(this.url + "Client?productId=3");
+   return this.http.get(this.API_URL + "Client?productId=3");
  }
  /*partners*/
  GetPartners(){
-   return this.http.get(this.url + "GetPartners");
+   return this.http.get(this.API_URL + "GetPartners");
  }
  /**downloads**/
  insertDownloads(body){
   let headers= new Headers({'Accept':'Application/json'}) ;
-  return this.http.post(this.url + "SaveDownloads",body)
+  return this.http.post(this.API_URL + "SaveDownloads",body)
+ }
+ /*testimonials*/
+ Gettestimonials(){
+  return this.http.get(this.API_URL + "GetTestimonials");
  }
 }

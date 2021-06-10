@@ -20,6 +20,7 @@ import { PriceComponent } from './components/price/price.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     DownloadsComponent,
     PriceComponent,
     SpinnerComponent,
+    TestimonialsComponent,
   ],
   imports: [
     BrowserModule,

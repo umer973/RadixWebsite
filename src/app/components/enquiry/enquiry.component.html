@@ -8,7 +8,7 @@
                   <div class="form-group col-md-6 col-sm-6">
                     <label for="full-name">Full Name</label>
                     <input type="text"  formControlName="FullName" placeholder="Full Name" class="form-control" 
-                    ngModel pattern="[a-zA-Z ]*">
+                     pattern="[a-zA-Z ]*">
                     <div *ngIf="(f.FullName.invalid && f.FullName.touched) || f.FullName.dirty">
                       <small *ngIf="f.FullName.errors?.required" class="text-danger">FullName is required</small>
                       <small class="text-danger" *ngIf="f.FullName.errors?.pattern">Please provide a valid name</small>
@@ -45,7 +45,7 @@
                     <div class="form-group col-md-6 col-sm-6">
                       <label for="mobile-number">Mobile Number</label>
                       <input type="text" maxlength="12" formControlName="ContactNo" placeholder="Contact" class="form-control"  
-                      ngModel pattern="^((\\+91-?)|0)?[0-9]{10}$">
+                       pattern="^((\\+91-?)|0)?[0-9]{10}$">
                       <div *ngIf="(f.ContactNo.invalid && f.ContactNo.touched) || f.ContactNo.dirty">
                         <small *ngIf="f.ContactNo.errors?.required" class="text-danger">Mobile Number is required</small>
                         <!--question mark(?) is a safe navigation operator-->

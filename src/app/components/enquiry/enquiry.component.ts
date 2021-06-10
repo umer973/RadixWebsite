@@ -56,17 +56,17 @@ export class EnquiryComponent implements OnInit {
         if (result.StatusCode == 200) {
                   
           if(result.Result!=undefined || result.Result!=null){
-            alert('Enquiry Submitted');
+            //alert('Enquiry Submitted');
             this.enquiryForm.reset();
           }
           else{
-            alert('Invalid Enquiry');
+            
           }
         }
 
       }, err => {
 
-        alert("Internal server error");
+        
 
       });
 

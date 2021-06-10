@@ -1,0 +1,71 @@
+<div class="container-fluid third-section">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <p>client speaks</p>
+        <h2>Testimonials</h2>
+        <hr/>
+        <div id="testimonial_slider" class="col-lg-8 col-md-10 col-sm-12 carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#testimonial_slider" data-slide-to="0" class="active"></li>
+            <li data-target="#testimonial_slider" data-slide-to="1"></li>
+            <li data-target="#testimonial_slider" data-slide-to="2"></li>
+          </ul>
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#testimonial_slider" data-slide="prev">
+            <span class="carousel-control-prev-icon fa fa-arrow-left"></span>
+          </a>
+          <a class="carousel-control-next" href="#testimonial_slider" data-slide="next">
+            <span class="carousel-control-next-icon fa fa-arrow-right"></span>
+          </a>
+          <div class="carousel-inner padding-0">
+            <div class="carousel-item active" *ngFor="let testimonial of testimonials.Result">
+              <div class="box-wrapper">
+                <img src="{{testimonial.Logo}}" alt="logo">
+                <p>"{{testimonial.Description}}"</p>
+                <ul class="stars padding-0">
+                  <li><i class="fa fa-star active"></i></li>
+                  <li><i class="fa fa-star active"></i></li>
+                  <li><i class="fa fa-star active"></i></li>
+                  <li><i class="fa fa-star active"></i></li>
+                </ul>
+                <h5>{{testimonial.ClientName}}</h5>
+              </div>
+            </div>
+            <!--<div class="carousel-item">
+              <div class="box-wrapper">
+                <img src="https://dummyimage.com/80x40/000/fff" alt="logo">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                  nisi ut aliquip ex ea commodo consequat"</p>
+                <ul class="stars padding-0">
+                  <li><i class="fa fa-star active"></i></li>
+                  <li><i class="fa fa-star active"></i></li>
+                  <li><i class="fa fa-star active"></i></li>
+                  <li><i class="fa fa-star active"></i></li>
+                </ul>
+                <h5>Lorem ipsum</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="box-wrapper">
+                <img src="https://dummyimage.com/80x40/000/fff" alt="logo">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                  nisi ut aliquip ex ea commodo consequat"</p>
+                <ul class="stars padding-0">
+                  <li><i class="fa fa-star active"></i></li>
+                  <li><i class="fa fa-star active"></i></li>
+                  <li><i class="fa fa-star active"></i></li>
+                  <li><i class="fa fa-star active"></i></li>
+                </ul>
+                <h5>Lorem ipsum</h5>
+              </div>
+            </div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
