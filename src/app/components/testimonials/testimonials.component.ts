@@ -16,4 +16,9 @@ export class TestimonialsComponent implements OnInit {
     console.log(this.testimonials);
   });
  }
+
+/** function () {
+  ('#testimonial_slider').find('.item').first().addClass('active');
+ };*/
+
 }
