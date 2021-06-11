@@ -12,6 +12,7 @@ export class EnquiryComponent implements OnInit {
   enquiryForm: FormGroup;
   isSubmitted: false;
   enquiry: Enquiry;
+  message:any;
   constructor(private formBuilder: FormBuilder, private service: HelperService) { }
 
 
@@ -57,6 +58,8 @@ export class EnquiryComponent implements OnInit {
                   
           if(result.Result!=undefined || result.Result!=null){
             //alert('Enquiry Submitted');
+            this.message= document.getElementById("msg");
+            this.message = 'We have received your enquiry and we"ll get back to you very soon.';
             this.enquiryForm.reset();
           }
           else{

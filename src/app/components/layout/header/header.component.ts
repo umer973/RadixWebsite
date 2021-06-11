@@ -59,7 +59,7 @@ checkScroll() {
       case "Softwares":
         classname="menu-item";
         break;
-        case "Products":
+      case "Products":
           classname= "menu-item";
         break;
     }

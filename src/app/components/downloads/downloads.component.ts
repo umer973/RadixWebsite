@@ -13,6 +13,7 @@ export class DownloadsComponent implements OnInit {
   downloadForm: FormGroup;
   isSubmitted: false;
   downloads: Downloads;
+  message : any;
   downloadUrl = 'http://backofficeservice.theradix.in/Downloads/Visual%20Studio%20Code.zip'
 
   constructor(private formBuilder: FormBuilder, private service: HelperService,
@@ -49,8 +50,9 @@ export class DownloadsComponent implements OnInit {
           if (result.Result != undefined || result.Result != null) {
             window.location.href =this.downloadUrl;
               this.downloadForm.reset();
-            this.close_popup();
-            this.spinnerService.hide()
+              this.spinnerService.hide()
+              this.message= document.getElementById("msg");
+              this.message = 'We have received your information and your preferred software is downloading.';
           }
           else {
 
@@ -67,7 +69,6 @@ export class DownloadsComponent implements OnInit {
       });
 
       this.downloadForm.reset();
-
 
     }
 

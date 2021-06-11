@@ -32,7 +32,8 @@
                         <div class="img-box">
                             <a href="#" class=""><img src="https://dummyimage.com/150x158/000/fff" alt="image"></a>
                         </div>
-                        <h4><a href="#" class="btn">
+                        <h4>
+                            <a href="javascript:void(0)" class="btn" (click)="open_popup()">
                                 <span class="fa fa-download" style="margin-right: 4px;"></span>Download now
                             </a>
                         </h4>
@@ -266,6 +267,7 @@
             </div> -->
         </div>
         <div style="text-align: center;">
+            <small class="text-success" id="msg" style="display: block;font-size: 14px;">{{message}}</small>
             <button type="submit" [disabled]="!downloadForm.valid" (click)="onSubmit()" class="btn">Submit</button>
         </div>
     </form>
