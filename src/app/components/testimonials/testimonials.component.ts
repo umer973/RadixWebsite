@@ -10,6 +10,7 @@ export class TestimonialsComponent implements OnInit {
   constructor(private service: HelperService) { }
 
   ngOnInit(): void {
+  
     this.service.Gettestimonials().subscribe(res => {
     let result = res;
     this.testimonials = result;
